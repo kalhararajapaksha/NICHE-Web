@@ -1,16 +1,15 @@
 import * as React from 'react';
 import { Container,Nav,Button,Image} from 'react-bootstrap';
-import { StaticImage } from "gatsby-plugin-image";
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-scroll';
 
 
 const Header = () => {
     return (
-        <nav>
-        <Navbar bg="light" expand="lg">
+        <nav id="nav">
+        <Navbar bg="light" expand="lg" id="navd">
         <Container>
-          <Navbar.Brand href="#home"><StaticImage src="../images/download.png" alt="A dinosaur" layout="fixed" width={200} height={200}/></Navbar.Brand>
+          <Navbar.Brand href="#home" className="nav-logo"></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
