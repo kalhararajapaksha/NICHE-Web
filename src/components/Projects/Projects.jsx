@@ -22,6 +22,8 @@ const Projects = () => {
                 </p>
               </div>
           </Col>
+          <div></div>
+          
         </Row>
       </Container>
     </section>
