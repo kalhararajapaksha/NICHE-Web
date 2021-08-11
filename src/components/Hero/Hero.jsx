@@ -1,26 +1,41 @@
 import * as React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
+import Lot from '../../images/lot1.png';
+import HeroImg from '../../images/hero-phone.png';
 
-const Hero = () => {
+
+const About = () => {
     return (
-      <section id="hero">
+      <section id="header" className="multi-bg-example">
       <Container>
-        <Title title="Hero" />
+        <Title title="Be Exclusive, Be " />
+        <Title title="Divine, Be Yourself" />
         <Row className="about-wrapper">
           <Col md={6} sm={12}>
            
               <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">
-                  {'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
-                </p>
-                <p className="about-wrapper__info-text">
-                  {'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
-                </p>
-                <p className="about-wrapper__info-text">
-                  {'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
+                  {'Niche brings you the ultimate Sri Lankan Fashion experience at your fingertips. It is time for you to shine and show the true Sri Lankan in you !'}
                 </p>
               </div>
+
+              <img
+          alt=""
+          src={Lot}
+          width="50"
+          height="50"
+          className="bg-img"/>
+          </Col>
+          <Col>
+         
+          <img
+          alt=""
+          src={HeroImg}
+          width="50"
+          height="50"
+          className="hero-phone"/>
+          
           </Col>
         </Row>
       </Container>
@@ -28,4 +43,4 @@ const Hero = () => {
 )
 }
 
-export default Hero
+export default About
