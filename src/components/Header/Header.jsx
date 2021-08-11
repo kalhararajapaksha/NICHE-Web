@@ -2,14 +2,21 @@ import * as React from 'react';
 import { Container,Nav,Button,Image} from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-scroll';
-
+import Logo from '../../images/download.png';
 
 const Header = () => {
     return (
-        <nav id="nav">
+        <section id="nav">
         <Navbar bg="light" expand="lg" id="navd">
         <Container>
-          <Navbar.Brand href="#home" className="nav-logo"></Navbar.Brand>
+          <Navbar.Brand href="#home" className="nav-logo">
+            <img
+          alt=""
+          src={Logo}
+          width="50"
+          height="50"
+          className="d-inline-block align-top"/>
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
@@ -21,7 +28,7 @@ const Header = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      </nav>
+      </section>
 )
 }
 

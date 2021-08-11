@@ -1,10 +1,18 @@
-#navd{
+#nav{
     position: fixed;  
     width: 100%;
     z-index: 1;
+    
 }
-.me-auto{
-   
-    right: 100px;
+#navd{
+    width: 100%;
+    
+}
 
+.navbar-expand-lg .navbar-collapse {   
+    position: relative;
+    @media (min-width: 992px) {
+        position:absolute;
+        right: 52px;
+      }
 }
