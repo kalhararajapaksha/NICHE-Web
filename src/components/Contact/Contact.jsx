@@ -6,20 +6,15 @@ const Contact = () => {
     return (
       <section id="contact">
       <Container>
-        <Title title="Contact Me" />
+        <Title title="Will Be Available On" />
         <Row className="about-wrapper">
           <Col md={6} sm={12}>
            
               <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">
-                  {'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                  {'NICHE will soon be available on both Android PlayStore and Apple AppStore for free download. Be ready to click the download button for an ultimate Sri Lankan fshion experience'}
                 </p>
-                <p className="about-wrapper__info-text">
-                  {'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
-                </p>
-                <p className="about-wrapper__info-text">
-                  {'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
-                </p>
+                
               </div>
           </Col>
         </Row>
