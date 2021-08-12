@@ -1,5 +1,5 @@
 import * as React from "react"
-import Layout from '../components/layout'
+/*import Layout from '../components/layout'
 
 const AboutPage = () => {
   return (
@@ -9,4 +9,4 @@ const AboutPage = () => {
   )
 }
 
-export default AboutPage
+export default AboutPage*/

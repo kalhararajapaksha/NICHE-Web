@@ -2,5 +2,9 @@
 @import './abstracts/variables';
 @import './abstracts/helpers';
 
-@import './sections/about';
+section {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+@import './sections/hero';
 @import './sections/nav';

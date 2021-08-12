@@ -1,12 +1,23 @@
-import * as React from "react"
-import Layout from '../components/layout'
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import Contact from '../components/Contact';
+import { headData } from '../mock/data';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../style/main.scss';
 
-const ContactPage = () => {
+
+export default () => {
+  const { title, lang, description } = headData;
+
   return (
-      <Layout pageHeading='Contact Page' pageTitle='Contact Page'>
-       Welcome to my Gatsby site contact page! 
-      </Layout>
-  )
-}
-
-export default ContactPage
+    <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>{title || 'Gatsby Simplefolio'}</title>
+        <html lang={lang || 'en'} />
+        <meta name="description" content={description || 'Gatsby Simplefolio'} />
+      </Helmet>
+      <Contact />
+    </>
+  );
+};

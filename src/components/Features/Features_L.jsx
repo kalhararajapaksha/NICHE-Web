@@ -4,9 +4,10 @@ import Title from '../Title/Title';
 import HeroImg from '../../images/hero-phone.png';
 import { StaticImage } from 'gatsby-plugin-image';
 
-const About = () => {
+
+const Fetures = () => {
     return (
-      <section id="about">
+      <section id="Fetures">
       <Container>
         <Row className="about-wrapper">
           <Col md={6} sm={12}>
@@ -16,9 +17,9 @@ const About = () => {
          // width="50"
          // height="50"
           className="hero-phone"/>
-          </Col>
+          </Col >
           <Col md={6} sm={12}>
-          <Title title="About" />
+          <Title title="YOUR MONEY IS SECURED WITH US" />
           <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">
                   {'7 Days Exchanges & Returns'}
@@ -36,4 +37,4 @@ const About = () => {
     </section>
 )
 }
-export default About
+export default Fetures
