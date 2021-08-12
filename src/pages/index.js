@@ -1,16 +1,15 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import App from '../components/App';
 import { headData } from '../mock/data';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../style/main.scss';
+import App from '../components/App';
+import Layout from '../components/Layout';
 
 
 export default () => {
   const { title, lang, description } = headData;
 
   return (
-    <>
+      <Layout bodyClass="page-home">
       <Helmet>
         <meta charSet="utf-8" />
         <title>{title || 'Gatsby Simplefolio'}</title>
@@ -18,6 +17,6 @@ export default () => {
         <meta name="description" content={description || 'Gatsby Simplefolio'} />
       </Helmet>
       <App />
-    </>
+      </Layout>
   );
 };
