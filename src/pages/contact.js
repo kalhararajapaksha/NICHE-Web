@@ -2,8 +2,8 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import Contact from '../components/Contact';
 import { headData } from '../mock/data';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../style/main.scss';
+import Layout from '../components/Layout';
+
 
 
 export default () => {
@@ -11,6 +11,7 @@ export default () => {
 
   return (
     <>
+     <Layout bodyClass="page-contact">
       <Helmet>
         <meta charSet="utf-8" />
         <title>{title || 'Gatsby Simplefolio'}</title>
@@ -18,6 +19,7 @@ export default () => {
         <meta name="description" content={description || 'Gatsby Simplefolio'} />
       </Helmet>
       <Contact />
+      </Layout>
     </>
   );
 };

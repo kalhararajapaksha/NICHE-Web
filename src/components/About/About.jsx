@@ -18,17 +18,15 @@ const About = () => {
           className="hero-phone"/>
           </Col>
           <Col md={6} sm={12}>
-          <Title title="About" />
+          <Title title="ABOUT NICHE" />
           <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">
-                  {'7 Days Exchanges & Returns'}
+                  {'NICHE delivers a stylish and trending collection of men and women apparel,sourced from Sri Lanka own fashion labels and reputed Sri Lankan fashion icons.NICHE provides you with everything from sarees to dresses, sarongs to jeans, Cosmetics and accessories.'}
                 </p>
                 <p className="about-wrapper__info-text">
-                  {'Terms & Conditions Apply'}
+                  {'Our incredible collection of products has something for everyone. With the availability of an ultra-modern collection of clothing and accessories online, NICHE is your one-stop shop for your wardrobe essentials'}
                 </p>
-                <p className="about-wrapper__info-text">
-                  {'100% Secure Checkout'}
-                </p>
+                
               </div>
           </Col>
         </Row>
