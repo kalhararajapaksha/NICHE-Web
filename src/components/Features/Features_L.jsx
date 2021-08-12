@@ -21,9 +21,7 @@ const Fetures = () => {
           <Col md={6} sm={12}>
           <Title title="YOUR MONEY IS SECURED WITH US" />
           <div className="about-wrapper__info">
-                <p className="about-wrapper__info-text">
-                  {'7 Days Exchanges & Returns'}
-                </p>
+          
                 <p className="about-wrapper__info-text">
                   {'Terms & Conditions Apply'}
                 </p>
