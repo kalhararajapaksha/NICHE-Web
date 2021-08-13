@@ -8,21 +8,20 @@ import AppStore from '../../images/app-store.png';
 import { StaticImage } from 'gatsby-plugin-image';
 
 
-
-const Contactus = () => {
+const Available = () => {
     return (
-      <section id="contactus" className="multi-bg-example">
+      <section id="available" className="multi-bg-example">
       <Container>
         
-        <Row className="contactus-wrapper hdngone">
+        <Row className="available-wrapper">
         
-          <Col md={6} sm={12}>
+          <Col md={6} sm={12} >
             <Row>
-            <Title title="GET IN TOUCH" />
+            <Title title="Will Be Available On " />
             
-              <div className="contactus-wrapper__info">
-                <p className="contactus-wrapper__info-text">
-                  {'Feel Like Contacting Us? Submit Your Questions Here & We will Get To You As Soon As Possible '}
+              <div className="available-wrapper__info">
+                <p className="available-wrapper__info-text">
+                  {'Niche will soon be available on both Android PlayStore and Apple AppStore for free download. Be ready to click the download button for an ultimate Sri Lankan fashion experience.'}
                 </p>
               </div>
               </Row>
@@ -35,25 +34,22 @@ const Contactus = () => {
             </Col>
           </Row>
           </Col>
-          
 
           <Col md={6} sm={12}>
-          <div className="contactus-wrapper__image">
+          <div className="available-wrapper__image">
           <StaticImage
           alt=""
           layout="constrained"
           src="../../images/hero-phone.png"
-          className="contactus-phone"/>
+          className="hero-phone"/>
           </div>
           </Col>
         </Row>
         <img alt="" src={Lot} width="50" height="50" className="bg-img"/>
-
-
       </Container>
      
     </section>
 )
 }
 
-export default Contactus
+export default Available
