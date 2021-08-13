@@ -19,14 +19,14 @@ const Footer = () => {
             <Row>
             <Title title="Reach us on " />
             
-              <div className="hero-wrapper__info">
-                <p className="hero-wrapper__info-text">
+              <div className="footer-wrapper__info">
+                <p className="footer-wrapper__info-text">
                   {'Niche Support:support@niche.lk'}
                 </p>
-                <p className="hero-wrapper__info-text">
+                <p className="footer-wrapper__info-text">
                   {'Niche Vendor Support:bussiness@niche.lk'}
                 </p>
-                <p className="hero-wrapper__info-text">
+                <p className="footer-wrapper__info-text">
                   {'Contact Number:+9476 728 2246'}
                 </p>
               </div>
@@ -40,16 +40,25 @@ const Footer = () => {
             </Row>
             <Row>
             <Col >    
-            <img alt="" src={AppStore} width="200" height="50" className="download-btn"/>
+            <img alt="" src={AppStore} width="100" height="50" className="download-btn"/>
             </Col>
             <Col>    
-           <img alt="" src={PlayStore} width="200" height="50" className="download-btn"/>
+           <img alt="" src={PlayStore} width="100" height="50" className="download-btn"/>
             </Col>
-          </Row>
-         
+            <Col>    
+           <img alt="" src={PlayStore} width="100" height="50" className="download-btn"/>
+            </Col>
+</Row>
+               
           
           </Col>
+          <Row>
+          <p className="footer-wrapper__info-text ftrunderpart">
+                  {'Copyright © NICHE 2021'}
+                </p>
+            </Row>
         </Row>
+
         
       </Container>
      
