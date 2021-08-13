@@ -6,5 +6,12 @@ section {
     flex-direction: row;
     flex-wrap: wrap;
   }
-@import './sections/hero';
 @import './sections/nav';
+@import './sections/hero';
+
+
+
+@import './sections/aboutushero';
+@import './sections/aboutuswhoweare_R';
+@import './sections/aboutuswhoweare_L';
+@import './sections/aboutuswhatwedo';
