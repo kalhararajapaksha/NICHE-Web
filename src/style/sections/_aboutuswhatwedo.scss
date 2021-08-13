@@ -1,0 +1,50 @@
+$small: 300px;
+$medium: 900px;
+
+
+#aboutus-whatwedo
+{
+    font-family: poppins;
+
+.what-heading-row h3
+{
+    text-align: center;
+    padding-top: 100px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.whatwedo-para-row
+{
+
+    padding-top: 70px;
+    text-align: center;
+    font-size: $xs-font-size;
+    padding-right: 150px;
+    padding-left: 150px;
+    @include respond(phone)
+    {
+      font-size: 15px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+      
+
+    .whatwedo-para-bold
+    {
+        font-weight: 700;
+        padding-top: 30px;
+         
+    }
+}
+.bg-img
+{
+    width: 600px;
+    height: 600px;
+    opacity: 20%;
+    position: absolute;
+    top: 2000px;
+    left: -300px;
+}
+
+}
