@@ -5,14 +5,31 @@
 section {
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 70px;
+    
   }
+
+//index
 @import './sections/hero';
-@import './sections/nav'; 
+@import './sections/nav';
+@import './sections/map';
+@import './sections/submit';
+//about us
+@import './sections/aboutushero';
+@import './sections/aboutuswhoweare_R';
+@import './sections/aboutuswhoweare_L';
+@import './sections/aboutuswhatwedo';
 
-
-
-
+//contact us
 @import './sections/contactus';
 @import './sections/joinwithus';
 @import './sections/contactinfo';
 @import './sections/footer';
+
+
+
+
+
+
+
+
