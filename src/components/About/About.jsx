@@ -12,9 +12,9 @@ const About = () => {
           <Col md={6} sm={12}>
           <StaticImage
           alt=""
-          src='../../images/hero-phone.png'
-         // width="50"
-         // height="50"
+          src='../../images/about-cover.png'
+          width="500"
+          height="500"
           className="hero-phone"/>
           </Col>
           <Col md={6} sm={12}>
