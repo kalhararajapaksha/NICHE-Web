@@ -1,0 +1,72 @@
+
+
+#aboutus-whoweare-r
+{
+    font-family: poppins;
+
+
+.who-heading-row h3
+{
+    text-align: center;
+    padding-top: 100px;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: $sm-font-size;
+}
+
+.bio-row
+{
+    padding-top: 150px;
+    width: 100vw;
+    height: 500px;
+   
+}
+.bio-name h3
+{
+font-weight: 700;
+text-align: right;
+font-size: $lg-font-size;
+padding-right: 150px;
+@include respond(phone)
+{
+  font-size: $md-font-size;
+  padding-right: 20px;
+}
+  
+}
+.bio-position h4
+{
+font-weight: 600;
+text-align: right;
+padding-top: 20px;
+color: #FF455C;
+font-size: $sm-font-size;
+padding-right: 150px;
+@include respond(phone)
+{
+  font-size: $xs-font-size;
+  padding-right: 20px;
+}
+  
+}
+
+.bio-desc .bio-para
+{
+
+font-weight: 400;
+text-align: right;
+padding-top: 20px;
+font-size: $xs-font-size;
+padding-right: 150px;
+@include respond(phone)
+{
+  font-size: 15px;
+  padding-right: 20px;
+}
+
+}
+
+
+
+
+}

@@ -1,12 +1,22 @@
-import * as React from "react"
-/*import Layout from '../components/layout'
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import { headData } from '../mock/data';
+import Aboutus from '../components/Aboutus';
+import Layout from '../components/Layout';
 
-const AboutPage = () => {
+
+export default () => {
+  const { title, lang, description } = headData;
+
   return (
-      <Layout pageHeading='About Page' pageTitle='about Page'>
-       Welcome to my Gatsby site about page! 
+      <Layout bodyClass="page-home">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>{title || 'Gatsby Simplefolio'}</title>
+        <html lang={lang || 'en'} />
+        <meta name="description" content={description || 'Gatsby Simplefolio'} />
+      </Helmet>
+      <Aboutus />
       </Layout>
-  )
-}
-
-export default AboutPage*/
+  );
+};
