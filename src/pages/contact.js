@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import Contact from '../components/Contact';
+import Contact from '../components/Contactus';
 import { headData } from '../mock/data';
 import Layout from '../components/Layout';
 
