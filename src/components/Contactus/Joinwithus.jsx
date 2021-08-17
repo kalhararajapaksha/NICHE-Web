@@ -6,9 +6,10 @@ const Joinwithus = () => {
     return (
       <section id="joinwithus">
       <Container>
-        <Title title="Sell With Us" />
+        <div className="sellwithus-div">
+        <h2>Sell with us</h2>
         <Row className="joinwithus-wrapper detailsprt">
-          <Col md={6} sm={12}>
+          <Col xs={12} sm={12} md={8} lg={8} >
            
               <div className="joinwithus-wrapper__info">
                 <p className="joinwithus-wrapper__info-text">
@@ -17,12 +18,13 @@ const Joinwithus = () => {
                <p className="joinwithus-wrapper_info-text">
                  {'We invite you and your brand to join Our team!'}
                </p>
-               <button type="button" class="btn btn-danger">sell with us</button>
+               <button type="button" class="sellbtn">sell with us</button>
               </div>
           </Col>
           <div></div>
           
         </Row>
+        </div>
       </Container>
     </section>
 )

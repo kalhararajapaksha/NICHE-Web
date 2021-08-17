@@ -1,0 +1,54 @@
+#available
+{
+    font-family: poppins;
+
+.app-heading 
+{
+
+h1 
+{
+    font-size: $md-font-size;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: left;
+    margin-top: 10vh;
+
+    @include respond (phone)
+    {
+        font-size: $sm-font-size;
+        text-align: center;
+        margin-top: 10vh;
+    }
+}
+.available-wrapper__info-text
+{
+    font-size: $xs-font-size;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: left;
+    margin-top: 5vh;
+    @include respond (phone)
+    {
+        font-size: 15px;
+        text-align: center;
+        margin-top: 5vh;
+    }
+}
+}
+
+.download-btn
+{
+    margin-top: 5vh;
+    width: 20vw;
+    height: 10vh;
+    margin-left: -1vw;
+    @include respond (phone)
+    {
+    width: 35vw;
+    height: 10vh;
+    margin-top: 5vh;
+    margin-left: 2vw;
+    }
+}
+
+}
