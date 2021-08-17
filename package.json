@@ -20,6 +20,7 @@
     "babel-plugin-styled-components": "^1.13.2",
     "bootstrap": "^5.0.2",
     "gatsby": "^3.10.1",
+    "gatsby-image": "^3.11.0",
     "gatsby-plugin-gatsby-cloud": "^2.10.0",
     "gatsby-plugin-google-analytics": "^3.10.0",
     "gatsby-plugin-image": "^1.11.0",

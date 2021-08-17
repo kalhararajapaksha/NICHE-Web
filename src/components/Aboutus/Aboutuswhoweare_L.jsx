@@ -6,7 +6,7 @@ import HeroImg from '../../images/hero-phone.png';
 import PlayStore from '../../images/play-store.png';
 import AppStore from '../../images/app-store.png';
 import { StaticImage } from 'gatsby-plugin-image';
-
+import CEO from '../../images/ceo.png';
 
 const Hero = () => {
     return (
@@ -27,7 +27,9 @@ const Hero = () => {
              </Row>  
              </Col>
              <Col sm={12} md={4} lg={4}>
-               <div className="img-bio"></div> 
+               <div className="img-bio">
+                      <img alt="" src={CEO} width="200" height="50" className="ceo-image"/>
+                 </div> 
              </Col>
         </Row>
               

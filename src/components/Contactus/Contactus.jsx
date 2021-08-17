@@ -2,11 +2,9 @@ import * as React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 import Lot from '../../images/lot1.png';
-import HeroImg from '../../images/hero-phone.png';
 import PlayStore from '../../images/play-store.png';
 import AppStore from '../../images/app-store.png';
-import { StaticImage } from 'gatsby-plugin-image';
-
+import {Form} from 'react-bootstrap';
 
 
 const Contactus = () => {
@@ -39,11 +37,46 @@ const Contactus = () => {
 
           <Col md={6} sm={12}>
           <div className="contactus-wrapper__image">
-          <StaticImage
-          alt=""
-          layout="constrained"
-          src="../../images/hero-phone.png"
-          className="contactus-phone"/>
+          <Form>
+            <Form.Group className="mb-3" controlId="formBasicEmail">
+             <Form.Label>Email address</Form.Label>
+              <Form.Control type="email" placeholder="Enter email" />
+             <Form.Text className="text-muted">
+              We'll never share your email with anyone else.
+              </Form.Text>
+             </Form.Group>
+
+             <Form.Group className="mb-3" controlId="formBasicEmail">
+             <Form.Label>Email address</Form.Label>
+              <Form.Control type="email" placeholder="Enter email" />
+             <Form.Text className="text-muted">
+              We'll never share your email with anyone else.
+              </Form.Text>
+             </Form.Group>
+             <Form.Group className="mb-3" controlId="formBasicEmail">
+             <Form.Label>Email address</Form.Label>
+              <Form.Control type="email" placeholder="Enter email" />
+             <Form.Text className="text-muted">
+              We'll never share your email with anyone else.
+              </Form.Text>
+             </Form.Group>
+             <Form.Group className="mb-3" controlId="formBasicEmail">
+             <Form.Label>Email address</Form.Label>
+              <Form.Control type="email" placeholder="Enter email" />
+             <Form.Text className="text-muted">
+              We'll never share your email with anyone else.
+              </Form.Text>
+             </Form.Group>
+
+              <Form.Group className="mb-3" controlId="formBasicPassword">
+              <Form.Label>Password</Form.Label>
+              <Form.Control type="password" placeholder="Password" />
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formBasicCheckbox">
+              <Form.Check type="checkbox" label="Check me out" />
+              </Form.Group>
+            
+               </Form>
           </div>
           </Col>
         </Row>
