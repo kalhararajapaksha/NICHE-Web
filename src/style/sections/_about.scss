@@ -1,0 +1,76 @@
+#about
+{
+    font-family: poppins;
+.about-wrapper
+{
+    margin-bottom: 15vh;
+}
+.aboutniche h3
+{
+text-transform: uppercase;
+font-size: $lg-font-size;
+font-weight: 700;
+margin-left: -10vw;
+
+@include respond (phone)
+{
+font-size: $md-font-size;
+font-weight: 700;
+margin-left: 3vw;
+margin-top: -30vh;
+}
+
+}
+.about-wrapper__info
+{
+   margin-left: -10vw;
+   padding-top: 3vh;
+   font-size: $xs-font-size;
+   font-weight: 500;
+
+   @include respond (phone)
+{
+font-size: 15px;
+font-weight: 500;
+margin-left: 3vw;
+margin-top: -20vh;
+
+}
+}
+
+.learnmore
+{
+text-transform: capitalize;
+text-align: left;
+font-size: $xs-font-size;
+color:$secondary-color ;
+margin-left: -10vw;
+padding-top: 3vh;
+font-weight: 500;
+@include respond (phone)
+{
+font-size: 15px;
+font-weight: 500;
+margin-left: 3vw;
+
+
+}
+
+}
+.hero-phone
+{
+width: 30vw;
+height:30vw;
+
+@include respond (phone)
+{
+width: 90vw;
+height:90vw;
+
+margin-top: 10vh;
+
+}
+}
+
+
+}

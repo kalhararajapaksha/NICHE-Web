@@ -9,16 +9,17 @@ const About = () => {
       <section id="about">
       <Container>
         <Row className="about-wrapper">
-          <Col md={6} sm={12}>
+          <Col  xs={{ order: '2' }} sm={{ order: '2' }} md={{ order: '1' }} lg={{ order: '1' }}>
           <StaticImage
           alt=""
           src='../../images/about-cover.png'
-          width="500"
-          height="500"
           className="hero-phone"/>
           </Col>
-          <Col md={6} sm={12}>
-          <Title title="ABOUT NICHE" />
+          <Col xs={{ order: '1' }} sm={{ order: '1' }} md={{ order: '2' }} lg={{ order: '2' }} className="aboutniche">
+            <Row>
+          <h3 >About niche</h3>
+          </Row>
+          <Row>
           <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">
                   {'NICHE delivers a stylish and trending collection of men and women apparel,sourced from Sri Lanka own fashion labels and reputed Sri Lankan fashion icons.NICHE provides you with everything from sarees to dresses, sarongs to jeans, Cosmetics and accessories.'}
@@ -28,8 +29,13 @@ const About = () => {
                 </p>
                 
               </div>
+          </Row>
+          <Row>
+          <p className="learnmore">Learn more</p>
+          </Row>
           </Col>
         </Row>
+        
       </Container>
     </section>
 )

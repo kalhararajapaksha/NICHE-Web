@@ -1,14 +1,15 @@
 #hero {
+
+  font-family: poppins;
+  
     .bg-img{
       position: absolute;
-      top:70px;
-      left:-379px;
-      width: 93vh;
-      height: 89vh;
-      opacity: 0.16; 
-      @include respond(phone) {
-            display: none;
-      }
+      top:130px;
+      left:-300px;
+      width: 600px;
+      height: 600px;
+      opacity: 20%; 
+      z-index: 0;
     }
       padding-top: 100px;
       background-color: $white-color;
@@ -21,8 +22,10 @@
         height: 100%;
       }
     
+     
+
       .hero-wrapper {       
-        @include respond(phone) {
+    /*   @include respond(phone) {
           color:$white-color;
           padding-bottom: 5rem;
           background-color: $primary-color;
@@ -31,7 +34,135 @@
             $primary-color 0%,
             $secondary-color 100%
           );
+        } */
+
+        .hero-heading h1
+        {
+          position: relative;
+          z-index: 1;
+          font-size: $lg-font-size;
+          font-weight: 700;
+          padding-top: 15vh;
+          line-height: 50px;
+
+          @include respond(phone)
+         {
+          font-size: $md-font-size;
+          text-align: center;
+         }
         }
+        .hero-wrapper__info-text
+        {
+          position: relative;
+          z-index: 1;
+          font-size: $sm-font-size;
+          font-weight: 500;
+          padding-top: 3vh;
+          padding-bottom: 3vh;
+
+          @include respond(phone)
+          {
+            font-size: $xs-font-size;
+           text-align: center;
+          }
+        }
+        .colappstorebtn
+        {
+         @include respond(phone)
+         {
+          padding-left: 25vw;
+          padding-top:10px;
+         }
+       
+        .appstorebtn
+        {
+          position: relative;
+          z-index: 1;
+          width: 220px;
+          height: 70px;
+          padding-left: 20px;
+          padding-top:8px;
+          padding-bottom: 8px;
+          background-color: black;
+          border: none;
+          border-radius: 5px;
+          box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.1);
+          transition: all 0.3s ease 0s;
+
+          p
+          {
+            color: white;
+            text-align: left;
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 25px;
+            .btnname
+            {
+              text-transform: uppercase;
+              font-weight: 600;
+            }
+          }
+        } 
+      }
+        .colplaystorebtn
+        {
+         padding-left: 100px;
+         @include respond(phone)
+         {
+          padding-left: 25vw;
+          padding-top:10px;
+         }
+       
+          .playstorebtn
+          {
+            position: relative;
+            z-index: 1;
+            width: 220px;
+            height: 70px;
+            padding-left: 20px;
+            padding-top:8px;
+            padding-bottom: 8px;
+            background-color: black;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease 0s;
+  
+            p
+            {
+              color: white;
+              text-align: left;
+              font-size: 15px;
+              font-weight: 300;
+              line-height: 25px;
+              .btnname
+              {
+                text-transform: uppercase;
+                font-weight: 600;
+              }
+            }
+        }
+      }
+      
+      .col-hero-wrapper__image
+      {
+        margin-left: -200px;
+        margin-top: -70px;
+        @include respond(phone)
+        {
+        margin-left: -120px;
+        margin-top: 8vh;
+
+        }
+      }
+      .hero-wrapper__image
+      {
+        width: 1100px;
+        @include respond(phone)
+        {
+         width: 700px;
+        }
+      }
         &__image {
           display: flex;
           flex-wrap: wrap;
