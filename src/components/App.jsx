@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import FeaturesL from './Features/Features_L';
 import FeaturesR from './Features/Features_R';
+import FeaturesLL from './Features/Features_LL';
 import Contact from './Contact/Contact';
 import Projects from './Projects/Projects';
 import Hero from './Hero/Hero';
@@ -25,7 +26,7 @@ function App() {
       <Map />
       <FeaturesL /> 
       <FeaturesR /> 
-      <FeaturesL /> 
+      <FeaturesLL /> 
       <Hero /> 
       <Sellers />
       <Submit />  

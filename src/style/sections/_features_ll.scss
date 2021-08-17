@@ -1,0 +1,39 @@
+#features_ll
+{
+    font-family: poppins;
+    background-color: #FFF8F8;
+    
+
+.feature-title h1
+{
+    text-transform: capitalize;
+    text-align: left;
+    font-size: $lg-font-size;
+    font-weight: 700;
+    margin-top: 10vh;
+}
+.feature-row
+{
+    .feature-name 
+    {
+    text-transform: capitalize;
+    text-align: left;
+    font-size: $sm-font-size;
+    font-weight: 500;
+    margin-top: 3vh;
+    color: $secondary-color;
+    }
+    .feature-info
+    {
+    text-transform: capitalize;
+    text-align: left;
+    font-size: $xs-font-size;
+    font-weight: 500;
+    margin-top: 3vh;
+    color: black;
+    }
+}
+
+
+
+}

@@ -26,7 +26,7 @@ const Hero = () => {
         </Col> 
         </Row>
 
-        <Row className="justify-content-lg-center downbtn-row">
+        <Row className="justify-content-lg-center justify-content-md-center justify-content-xs-center justify-content-sm-center downbtn-row">
         <Col  xs={{ span: 4, offset: 5 }} sm={{ span: 4, offset: 3 }} md={{ span: 4, offset: 3 }} lg={{ span: 4, offset: 3 }}  >
          <button className="downbtn"></button>
          </Col>
