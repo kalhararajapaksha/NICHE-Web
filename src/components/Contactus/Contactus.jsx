@@ -14,9 +14,9 @@ const Contactus = () => {
         
         <Row className="contactus-wrapper hdngone">
               
-          <Col md={6} sm={12}>
-            <Row>
-            <Title title="GET IN TOUCH" />
+          <Col xs={12} sm={12} md={6} lg={6}>
+            <Row className="header-txt" >
+           <h1>Get in touch</h1>
             
               <div className="contactus-wrapper__info">
                 <p className="contactus-wrapper__info-text">
@@ -25,49 +25,50 @@ const Contactus = () => {
               </div>
               </Row>
           <Row>
-            <Col >    
-            <img alt="" src={AppStore} width="200" height="50" className="download-btn"/>
+            <Col xs={4} sm={4} md={2} lg={2} >    
+           <button className="socialbtn"></button>
             </Col>
-            <Col>    
-           <img alt="" src={PlayStore} width="200" height="50" className="download-btn"/>
+            <Col xs={4} sm={4} md={2} lg={2} >    
+           <button className="socialbtn"></button>
+            </Col>
+            <Col xs={4} sm={4} md={2} lg={2} >    
+           <button className="socialbtn"></button>
             </Col>
           </Row>
           </Col>
           
 
-          <Col md={6} sm={12}>
+          <Col xs={12} sm={12} md={6} lg={6} >
           <div className="contactus-wrapper-form">
-          <Title title="Send Us A Message" />
+          <h2>Send us a message</h2>
           <Form className="contactus-wrapper-form-form">
             <Form.Group className="mb-3" controlId="formBasicEmail">
              <Form.Label>Name</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" size="sm" />
+              <Form.Control type="email"  size="sm" className="input-field"/>
 
              </Form.Group>
 
              <Form.Group className="mb-3" controlId="formBasicEmail">
              <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" size="sm"/>
+              <Form.Control type="email"  size="sm" className="input-field"/>
              </Form.Group>
              <Form.Group className="mb-3" controlId="formBasicEmail">
              <Form.Label>Contact No</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" size="sm"/>
+              <Form.Control type="email"  size="sm" className="input-field"/>
              </Form.Group>
              <Form.Group className="mb-3" controlId="formBasicEmail">
              <Form.Label>Subject</Form.Label>
-              <Form.Control type="text" placeholder="Enter email" size="sm" />
+              <Form.Control type="text"  size="sm" className="input-field" />
              </Form.Group>
               <Form.Group className="mb-3" controlId="formBasicPassword">
               <Form.Label>Message</Form.Label>
-              <Form.Control type="text" placeholder="Password" size="sm"/>
+              <Form.Control type="text"  size="sm" className="input-field"/>
               </Form.Group>
-              <Form.Group className="mb-3" controlId="formBasicCheckbox">
-              <Form.Check type="checkbox" label="Check me out" />
-              </Form.Group>
+             
               
               <Form.Group  className="mb-3">
              
-              <Button type="submit">Sign in</Button>
+              <Button type="submit" className="submitbtn">Send</Button>
           
               </Form.Group>
             

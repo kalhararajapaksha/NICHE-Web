@@ -15,9 +15,9 @@ const Available = () => {
         
         <Row className="available-wrapper">
         
-          <Col md={6} sm={12} >
-            <Row>
-            <Title title="Will Be Available On " />
+          <Col sm={12} xs={12} md={6} lg={6} >
+            <Row className="app-heading">
+            <h1>Will be available on</h1>
             
               <div className="available-wrapper__info">
                 <p className="available-wrapper__info-text">
@@ -26,16 +26,16 @@ const Available = () => {
               </div>
               </Row>
           <Row>
-            <Col >    
+            <Col sm={6} xs={6} md={6} lg={6} >    
             <img alt="" src={AppStore} width="200" height="50" className="download-btn"/>
             </Col>
-            <Col>    
+            <Col sm={6} xs={6} md={6} lg={6}>    
            <img alt="" src={PlayStore} width="200" height="50" className="download-btn"/>
             </Col>
           </Row>
           </Col>
 
-          <Col md={6} sm={12}>
+          <Col sm={12} xs={12} md={6} lg={6}>
           <div className="available-wrapper__image">
           <StaticImage
           alt=""
@@ -45,7 +45,7 @@ const Available = () => {
           </div>
           </Col>
         </Row>
-        <img alt="" src={Lot} width="50" height="50" className="bg-img"/>
+     
       </Container>
      
     </section>

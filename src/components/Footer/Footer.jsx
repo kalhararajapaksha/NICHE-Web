@@ -7,14 +7,14 @@ import { TiSocialFacebook } from "@react-icons/all-files/ti/TiSocialFacebook";
 const Footer = () => {
     return (
       <section id="footer" className="multi-bg-example">
-      <Container>
+      <Container fluid>
+        <div className="footer-div">
         
         <Row className="footer-wrapper footrdetails">
         
-          <Col md={6} sm={12}>
-            <Row>
-            <Title title="Reach us on " />
-            
+          <Col xs={12} sm={12} md={6} lg={6} >
+            <Row className="footer-details">
+            <h2>Reach us on</h2>
               <div className="footer-wrapper__info">
                 <p className="footer-wrapper__info-text">
                   {'Niche Support:support@niche.lk'}
@@ -30,19 +30,24 @@ const Footer = () => {
          
           </Col>
 
-          <Col md={6} sm={12}>
-          <Row>
-            <Title title="Follow us " />
+          <Col xs={12} sm={12} md={6} lg={6} >
+          <Row className="footer-details-follow">
+           <h2>Follow Us</h2>
             </Row>
-            <Row>
-            <Col >    
-           
+            <Row className="social-row">
+            <Col xs={4} sm={4} md={2} lg={2} className="social-col" >    
+           <button className="socialbtn"></button>
             </Col>
+<<<<<<< HEAD
+            <Col xs={4} sm={4} md={2} lg={2}>    
+           <button className="socialbtn"></button>
+=======
             <Col>    
             <TiSocialFacebook />
+>>>>>>> 651ddba6ad6df34b549fb0c2e6bc5f9c37ab4959
             </Col>
-            <Col>    
-            
+            <Col xs={4} sm={4} md={2} lg={2} >    
+           <button className="socialbtn"></button>
             </Col>
 </Row>
                
@@ -56,7 +61,7 @@ const Footer = () => {
             </Row>
         </Row>
 
-        
+        </div>
       </Container>
      
     </section>
