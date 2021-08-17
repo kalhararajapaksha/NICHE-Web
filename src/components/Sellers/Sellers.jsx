@@ -7,36 +7,39 @@ const Sellers = () => {
     return (
       <section id="sellers">
       <Container>
-      <Title title="Best Sellers" />
-        <Row>
-          <Col md={4} sm={12}>
+        <Row className="bestsellers-title">
+        <h1>Best Sellers</h1>
+        </Row>
+      
+        <Row className="row1">
+          <Col xs={12} sm={12} md={4} lg={4}>
             <div className="sellers-wrapper__image"> 
               <StaticImage alt="" layout="constrained" src="../../images/Bass.png" className="hero-phone"/>
             </div>
           </Col>
-          <Col md={4} sm={12}>
+          <Col xs={12} sm={12} md={4} lg={4}>
             <div className="sellers-wrapper__image">
               <StaticImage alt="" layout="constrained" src="../../images/COSRX.png" className=""/>
             </div>
            </Col>
-          <Col md={4} sm={12}>
+          <Col xs={12} sm={12} md={4} lg={4}>
             <div className="sellers-wrapper__image">
               <StaticImage alt="" layout="constrained" src="../../images/ReeD.png" className=""/>
             </div>
           </Col>
         </Row>
-        <Row>
-          <Col md={4} sm={12}>
+        <Row className="row2">
+          <Col xs={12} sm={12} md={4} lg={4}>
             <div className="sellers-wrapper__image">
               <StaticImage alt="" layout="constrained" src="../../images/COSRX.png" className=""/>
             </div>
           </Col>
-          <Col>
+          <Col xs={12} sm={12} md={4} lg={4}>
             <div className="sellers-wrapper__image">
               <StaticImage alt="" layout="constrained" src="../../images/ReeD.png" className=""/>
             </div>
           </Col>
-          <Col md={4} sm={12}>
+          <Col xs={12} sm={12} md={4} lg={4}>
             <div className="sellers-wrapper__image">
                <StaticImage alt="" layout="constrained" src="../../images/Bass.png" className=""/>
             </div>

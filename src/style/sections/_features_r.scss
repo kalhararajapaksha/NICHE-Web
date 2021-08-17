@@ -2,7 +2,15 @@
 {
     font-family: poppins;
     background-color: $white-color;
-    
+ 
+    .hero-phone
+{
+    @include respond(phone)
+    {
+        width: 100vw;
+        height: 100vw;
+    }
+}
 
 .feature-title h1
 {
@@ -11,6 +19,11 @@
     font-size: $lg-font-size;
     font-weight: 700;
     margin-top: 10vh;
+    @include respond(phone)
+    {
+        font-size: $md-font-size;
+        margin-top: 5vh;
+    }
 }
 .feature-row
 {
@@ -22,6 +35,12 @@
     font-weight: 500;
     margin-top: 3vh;
     color: $secondary-color;
+
+    @include respond(phone)
+    {
+        font-size: $xs-font-size;
+        margin-top: 3vh;
+    }
     }
     .feature-info
     {
@@ -31,6 +50,12 @@
     font-weight: 500;
     margin-top: 3vh;
     color: black;
+
+    @include respond(phone)
+    {
+        font-size: 15px;
+        margin-top: 3vh;
+    }
     }
 }
 

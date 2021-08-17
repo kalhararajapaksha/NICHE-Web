@@ -1,9 +1,40 @@
 #sellers{
-    
+    font-family: poppins;
+  .bestsellers-title h1
+  {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: $md-font-size;
+    font-weight: 700;
+  }
+  .row2
+  {
+    margin-top: 5vh;
+
+    @include respond (phone)
+    {
+      margin-top: 0;
+    }
+  }
     .sellers-wrapper__image{
+      width: 25vw;
+      height: 5vh;
+      margin-top: 10vh;
+      border-radius: 5px;
+      background-color: white;
       display: flex;
       height: 100%;
       align-items: center;
       justify-content: space-around;
+      box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease 0s;
+
+      @include respond(phone)
+      {
+        width: 70vw;
+        height: 20vh;
+        margin-top: 10vh;
+        margin-left: 10vw;
+      }
     }
 }
