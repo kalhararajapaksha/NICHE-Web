@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
-import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
+import { TiSocialFacebook } from "@react-icons/all-files/ti/TiSocialFacebook";
 
 
 const Footer = () => {
@@ -39,7 +39,7 @@ const Footer = () => {
            
             </Col>
             <Col>    
-            <FaBeer />
+            <TiSocialFacebook />
             </Col>
             <Col>    
             
