@@ -9,8 +9,8 @@ const Fetures = () => {
     return (
       <section id="features_l">
       <Container>
-        <Row className="about-wrapper">
-          <Col md={6} sm={12}>
+        <Row className="about-wrapper" >
+          <Col md={6} sm={12} xs={{ order: '2' }} sm={{ order: '2' }} md={{ order: '1' }} lg={{ order: '1' }} >
           <StaticImage
           alt=""
           src='../../images/hero-phone.png'
@@ -18,7 +18,7 @@ const Fetures = () => {
          // height="50"
           className="hero-phone"/>
           </Col >
-          <Col md={6} sm={12}>
+          <Col md={6} sm={12} xs={{ order: '1' }} sm={{ order: '1' }} md={{ order: '2' }} lg={{ order: '2' }} >
           <Row className="feature-title">
           <h1>YOUR MONEY IS SECURED <br/>WITH US</h1>
           </Row>
