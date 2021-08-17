@@ -1,11 +1,7 @@
 import * as React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
-import Lot from '../../images/lot1.png';
-import HeroImg from '../../images/hero-phone.png';
-import PlayStore from '../../images/play-store.png';
-import AppStore from '../../images/app-store.png';
-import { StaticImage } from 'gatsby-plugin-image';
+import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
 
 
 const Footer = () => {
@@ -40,13 +36,13 @@ const Footer = () => {
             </Row>
             <Row>
             <Col >    
-            <img alt="" src={AppStore} width="100" height="50" className="download-btn"/>
+           
             </Col>
             <Col>    
-           <img alt="" src={PlayStore} width="100" height="50" className="download-btn"/>
+            <FaBeer />
             </Col>
             <Col>    
-           <img alt="" src={PlayStore} width="100" height="50" className="download-btn"/>
+            
             </Col>
 </Row>
                
@@ -55,6 +51,7 @@ const Footer = () => {
           <Row>
           <p className="footer-wrapper__info-text ftrunderpart">
                   {'Copyright © NICHE 2021'}
+                 
                 </p>
             </Row>
         </Row>

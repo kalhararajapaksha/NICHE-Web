@@ -4,7 +4,7 @@ import Title from '../Title/Title';
 import Lot from '../../images/lot1.png';
 import PlayStore from '../../images/play-store.png';
 import AppStore from '../../images/app-store.png';
-import {Form} from 'react-bootstrap';
+import {Form,Button} from 'react-bootstrap';
 
 
 const Contactus = () => {
@@ -13,7 +13,7 @@ const Contactus = () => {
       <Container>
         
         <Row className="contactus-wrapper hdngone">
-        
+              
           <Col md={6} sm={12}>
             <Row>
             <Title title="GET IN TOUCH" />
@@ -36,44 +36,39 @@ const Contactus = () => {
           
 
           <Col md={6} sm={12}>
-          <div className="contactus-wrapper__image">
-          <Form>
+          <div className="contactus-wrapper-form">
+          <Title title="Send Us A Message" />
+          <Form className="contactus-wrapper-form-form">
             <Form.Group className="mb-3" controlId="formBasicEmail">
-             <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
-             <Form.Text className="text-muted">
-              We'll never share your email with anyone else.
-              </Form.Text>
+             <Form.Label>Name</Form.Label>
+              <Form.Control type="email" placeholder="Enter email" size="sm" />
+
              </Form.Group>
 
              <Form.Group className="mb-3" controlId="formBasicEmail">
              <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
-             <Form.Text className="text-muted">
-              We'll never share your email with anyone else.
-              </Form.Text>
+              <Form.Control type="email" placeholder="Enter email" size="sm"/>
              </Form.Group>
              <Form.Group className="mb-3" controlId="formBasicEmail">
-             <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
-             <Form.Text className="text-muted">
-              We'll never share your email with anyone else.
-              </Form.Text>
+             <Form.Label>Contact No</Form.Label>
+              <Form.Control type="email" placeholder="Enter email" size="sm"/>
              </Form.Group>
              <Form.Group className="mb-3" controlId="formBasicEmail">
-             <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
-             <Form.Text className="text-muted">
-              We'll never share your email with anyone else.
-              </Form.Text>
+             <Form.Label>Subject</Form.Label>
+              <Form.Control type="text" placeholder="Enter email" size="sm" />
              </Form.Group>
-
               <Form.Group className="mb-3" controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password" />
+              <Form.Label>Message</Form.Label>
+              <Form.Control type="text" placeholder="Password" size="sm"/>
               </Form.Group>
               <Form.Group className="mb-3" controlId="formBasicCheckbox">
               <Form.Check type="checkbox" label="Check me out" />
+              </Form.Group>
+              
+              <Form.Group  className="mb-3">
+             
+              <Button type="submit">Sign in</Button>
+          
               </Form.Group>
             
                </Form>
