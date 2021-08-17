@@ -38,13 +38,8 @@ const Footer = () => {
             <Col xs={4} sm={4} md={2} lg={2} className="social-col" >    
            <button className="socialbtn"></button>
             </Col>
-<<<<<<< HEAD
-            <Col xs={4} sm={4} md={2} lg={2}>    
-           <button className="socialbtn"></button>
-=======
             <Col>    
-            <TiSocialFacebook />
->>>>>>> 651ddba6ad6df34b549fb0c2e6bc5f9c37ab4959
+              <TiSocialFacebook />
             </Col>
             <Col xs={4} sm={4} md={2} lg={2} >    
            <button className="socialbtn"></button>

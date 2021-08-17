@@ -66,83 +66,21 @@
            text-align: center;
           }
         }
-        .colappstorebtn
-        {
-         @include respond(phone)
-         {
-          padding-left: 25vw;
-          padding-top:10px;
-         }
        
-        .appstorebtn
-        {
-          position: relative;
-          z-index: 1;
-          width: 220px;
-          height: 70px;
-          padding-left: 20px;
-          padding-top:8px;
-          padding-bottom: 8px;
-          background-color: black;
-          border: none;
-          border-radius: 5px;
-          box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.1);
-          transition: all 0.3s ease 0s;
+        .store-button-group {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
 
-          p
-          {
-            color: white;
-            text-align: left;
-            font-size: 15px;
-            font-weight: 300;
-            line-height: 25px;
-            .btnname
-            {
-              text-transform: uppercase;
-              font-weight: 600;
+          .appstorebtn {
+            display: flex;
+            align-items: center;
+
+            img {
+              height: 50px;
             }
           }
-        } 
-      }
-        .colplaystorebtn
-        {
-         padding-left: 100px;
-         @include respond(phone)
-         {
-          padding-left: 25vw;
-          padding-top:10px;
-         }
-       
-          .playstorebtn
-          {
-            position: relative;
-            z-index: 1;
-            width: 220px;
-            height: 70px;
-            padding-left: 20px;
-            padding-top:8px;
-            padding-bottom: 8px;
-            background-color: black;
-            border: none;
-            border-radius: 5px;
-            box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease 0s;
-  
-            p
-            {
-              color: white;
-              text-align: left;
-              font-size: 15px;
-              font-weight: 300;
-              line-height: 25px;
-              .btnname
-              {
-                text-transform: uppercase;
-                font-weight: 600;
-              }
-            }
         }
-      }
       
       .col-hero-wrapper__image
       {
