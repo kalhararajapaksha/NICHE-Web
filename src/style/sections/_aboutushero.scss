@@ -83,6 +83,16 @@
     box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease 0s;
 
-    
+    .arrowdown
+    {
+        width: 4vw;
+        height: 4vh;
+        color: white;
+        @include respond (phone)
+        {
+            width: 7vw;
+            height: 7vh;
+        }
+    }
 }
 }

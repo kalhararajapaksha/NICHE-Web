@@ -22,12 +22,12 @@ const Hero = () => {
 
         <Row className="bio-row">
         
-             <Col sm={12} md={4} lg={4}>
-               <div className="img-bio">
-               <img alt="" src={Co} width="200" height="50" className="cofo-image"/>
-                 </div> 
+             <Col xs={12} sm={12} md={4} lg={4} xs={{order:2}} sm={{order:2}} md={{order:1}} lg={{order:1}}>
+               
+               <img alt="" src={Co} className="cofo-image"/>
+                
              </Col>
-             <Col sm={12} md={8} lg={8} className="bio-ceo" >
+             <Col xs={12} sm={12} md={8} lg={8} className="bio-ceo" xs={{order:1}} sm={{order:1}} md={{order:2}} lg={{order:2}}>
               <Row className="bio-name">
                <h3>Mr.James Smith</h3>
               </Row>

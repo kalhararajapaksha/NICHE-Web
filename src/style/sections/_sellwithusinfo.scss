@@ -21,8 +21,8 @@
     margin-top: 10vh;
     text-align: center;
     font-size: $xs-font-size;
-    padding-right: 150px;
-    padding-left: 150px;
+    padding-right: 10vw;
+    padding-left: 10vw;
     @include respond(phone)
     {
       font-size: 15px;
@@ -31,7 +31,6 @@
       margin-top: -15vh;
     }
       
-
     .whatwedo-para-bold
     {
         font-weight: 700;

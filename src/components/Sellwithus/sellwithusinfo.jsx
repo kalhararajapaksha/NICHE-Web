@@ -30,7 +30,6 @@ const Hero = () => {
             </p>
        </Row>  
        
-        
       </Container>
      
     </section>
