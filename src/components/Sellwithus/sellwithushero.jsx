@@ -1,14 +1,9 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import Title from '../Title/Title';
 import Lot from '../../images/lot1.png';
 import HeroImg from '../../images/hero-phone.png';
-import PlayStore from '../../images/playstore.png';
-import AppStore from '../../images/appstore.svg';
 import { Link } from '@reach/router'
 import { Modal } from '../Modal/Modal';
-import { GlobalStyle } from '../globalStyles';
-import styled from 'styled-components';
 
 
 
@@ -62,7 +57,7 @@ const Hero = () => {
         
       </section>
       <Modal showModal={showModal} setShowModal={setShowModal} />
-      <GlobalStyle />
+      
       </>
     );
 }
