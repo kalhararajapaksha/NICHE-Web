@@ -9,6 +9,7 @@ import { Link } from '@reach/router'
 
 
 
+
 const Hero = () => {
     return (
       <section id="hero" className="multi-bg-example">
