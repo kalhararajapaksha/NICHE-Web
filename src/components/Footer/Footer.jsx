@@ -2,7 +2,8 @@ import * as React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 import { TiSocialFacebook } from "@react-icons/all-files/ti/TiSocialFacebook";
-
+import { AiFillInstagram } from "@react-icons/all-files/ai/AiFillInstagram";
+import { AiOutlineTwitter } from "@react-icons/all-files/ai/AiOutlineTwitter";
 
 const Footer = () => {
     return (
@@ -24,6 +25,7 @@ const Footer = () => {
                 </p>
                 <p className="footer-wrapper__info-text">
                   {'Contact Number:+9476 728 2246'}
+                  
                 </p>
               </div>
               </Row>
@@ -36,13 +38,13 @@ const Footer = () => {
             </Row>
             <Row className="social-row">
             <Col xs={4} sm={4} md={2} lg={2} className="social-col" >    
-           <button className="socialbtn"></button>
+           <button className="socialbtn"><TiSocialFacebook className="icon" /></button>
             </Col>
-            <Col>    
-              <TiSocialFacebook />
+            <Col xs={4} sm={4} md={2} lg={2} className="social-col" >    
+           <button className="socialbtn"><AiFillInstagram className="icon"/></button>
             </Col>
-            <Col xs={4} sm={4} md={2} lg={2} >    
-           <button className="socialbtn"></button>
+            <Col xs={4} sm={4} md={2} lg={2} className="social-col" >    
+           <button className="socialbtn"><AiOutlineTwitter className="icon" /></button>
             </Col>
 </Row>
                

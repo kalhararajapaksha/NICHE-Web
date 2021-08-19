@@ -2,13 +2,14 @@
 {
     font-family: poppins;
     background-color: #FFF8F8;
+    margin-top: 10vh;
     
 .hero-phone
 {
+    width: 45vw;
     @include respond(phone)
     {
         width: 100vw;
-        height: 100vw;
     }
 }
 .feature-title h1
@@ -38,6 +39,15 @@
     {
         font-size: $xs-font-size;
         margin-top: 3vh;
+    }
+    .icon
+    {
+        margin-right: 2vw;
+
+        @include respond(phone)
+        {
+         margin-right: 5vw;
+        }
     }
     }
     .feature-info

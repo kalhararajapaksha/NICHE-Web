@@ -11,32 +11,28 @@ import { Link } from '@reach/router'
 
 const Hero = () => {
     return (
-      <section id="hero" className="multi-bg-example">
+      <section id="sellhero" className="multi-bg-example">
         <Container>
           <Row className="hero-wrapper">
             <Col xs={12} sm={12} md={6} lg={6}>
               <Row className="hero-heading">
+                <h2>
+                NICHE online shopping store
+                </h2>
                 <h1>
-                  Be Exclusive, Be <br /> Divine, Be Yourself{' '}
+                Your Brand , Your Way
                 </h1>
                 <div className="hero-wrapper__info">
                   <p className="hero-wrapper__info-text">
                     {
-                      'Niche brings you the ultimate Sri Lankan Fashion experience at your fingertips. It is time for you to shine and show the true Sri Lankan in you !'
+                      'Selling with your own virtual store has never been easier, faster and scalable'
                     }
                   </p>
                 </div>
               </Row>
               <Row>
                 <Col>
-                  <div className="store-button-group">
-                    <a className="appstorebtn" href="/">
-                      <img alt="" src={AppStore} />
-                    </a>
-                    <a className="appstorebtn pl-3" href="/">
-                      <img alt="" src={PlayStore} />
-                    </a>
-                  </div>
+                  <button className="sellbtn">Sell with us</button>
                 </Col>
               </Row>
             </Col>

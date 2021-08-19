@@ -9,6 +9,7 @@
             font-size: $lg-font-size;
             font-weight: 700;
             margin-left: -10vw;
+            margin-top: 5vh;
 
             @include respond(phone) {
             font-size: $md-font-size;
@@ -46,15 +47,17 @@
       font-weight: 500;
       margin-left: 3vw;
     }
+    .arrow
+    {
+      width: 3vw;
+      height: 4vh;
+    }
   }
   .hero-phone {
-    width: 30vw;
-    height: 30vw;
-
+    width: 28vw;
     @include respond(phone) {
-      width: 90vw;
-      height: 90vw;
-
+      width: 80vw;
+      margin-left: 5vw;
       margin-top: 10vh;
     }
   }

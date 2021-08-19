@@ -12,7 +12,7 @@ const Hero = () => {
     return (
       <section id="aboutus-whoweare-l" className="multi-bg-example">
       <Container fluid className="bio">
-     
+     <div className="section-info-div">
         <Row className="bio-row">
         
              <Col sm={12} md={8} lg={8} className="bio-ceo" >
@@ -27,13 +27,13 @@ const Hero = () => {
              </Row>  
              </Col>
              <Col sm={12} md={4} lg={4}>
-               <div className="img-bio">
-                      <img alt="" src={CEO} width="200" height="50" className="ceo-image"/>
-                 </div> 
+               
+                      <img alt="" src={CEO} className="ceo-image"/>
+                 
              </Col>
         </Row>
               
-        
+        </div>
       </Container>
      
     </section>

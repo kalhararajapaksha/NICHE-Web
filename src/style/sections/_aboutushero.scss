@@ -18,16 +18,23 @@
         background-image: linear-gradient(100deg,white, #ffecec);
        
 }
-.bg-img
-{
+.bg-img{
+    position: absolute;
+    top:130px;
+    left:-300px;
     width: 600px;
     height: 600px;
-    opacity: 20%;
-    position: absolute;
-    top: 130px;
-    left: -300px;
-    z-index:0;
-}
+    opacity: 20%; 
+    z-index: 0;
+
+    @include respond(phone)
+    {
+    top:20vh;
+    left:-50vw;
+    width: 100vw;
+    height: 100vw;
+    }
+  }
 .aboutus-heading
 {
     position: relative;
@@ -66,6 +73,8 @@
 }
 .downbtn
 {
+    position: relative;
+    bottom: 10px;
     width: 70px;
     height:70px;
     border-radius: 100%;

@@ -12,7 +12,7 @@ const Hero = () => {
     return (
       <section id="aboutus-hero" className="multi-bg-example">
       <Container fluid className="hero-gradient">
-        
+        <div className="section-div">
         <Row className="aboutus-heading-row">
         
              <Col md={12} sm={12} lg={12}>
@@ -32,7 +32,7 @@ const Hero = () => {
          </Col>
         </Row>
         <img alt="" src={Lot} width="50" height="50" className="bg-img"/>
-        
+        </div>
       </Container>
      
     </section>
