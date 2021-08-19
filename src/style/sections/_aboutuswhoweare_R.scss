@@ -8,12 +8,19 @@
 .who-heading-row h3
 {
     text-align: center;
-    padding-top: 100px;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
     font-weight: 700;
     text-transform: capitalize;
     font-size: $sm-font-size;
 }
-
+.bio-ceo
+{
+  @include respond(phone)
+  {
+    margin-top:-15vh;
+  }
+}
 .bio-row
 {
     padding-top: 150px;
@@ -66,7 +73,21 @@ padding-right: 150px;
 
 }
 
+.cofo-image
+{
+  width: 25vw;
+  position: relative;
+  bottom: 13vh;
+  left: 5vw;
 
-
+@include respond(phone)
+{
+  width: 55vw;
+  position: relative;
+  bottom:5vh;
+  left: 10vw;
+ 
+}
+}
 
 }

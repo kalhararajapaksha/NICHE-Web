@@ -55,17 +55,29 @@
       {
         width: 5vw;
         height: 5vh;
-       
+        @include respond(phone)
+        {
+       margin-right: 3vw;
+        }
       }
       .brandicon
       {
         width: 5vw;
         height: 5vh;
+        @include respond(phone)
+        {
+       margin-right: 3vw;
+        }
       }
       .flagicon
       {
         width: 5vw;
         height: 5vh;
+        @include respond(phone)
+        {
+          margin-left: 3vw;
+          margin-right: 3vw;
+        }
       }
   }
 

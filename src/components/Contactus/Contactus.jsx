@@ -5,6 +5,10 @@ import Lot from '../../images/lot1.png';
 import PlayStore from '../../images/playstore.png';
 import AppStore from '../../images/appstore.svg';
 import {Form,Button} from 'react-bootstrap';
+import { TiSocialFacebook } from "@react-icons/all-files/ti/TiSocialFacebook";
+import { AiFillInstagram } from "@react-icons/all-files/ai/AiFillInstagram";
+import { AiOutlineTwitter } from "@react-icons/all-files/ai/AiOutlineTwitter";
+import { FaPaperPlane } from "@react-icons/all-files/fa/FaPaperPlane";
 
 
 const Contactus = () => {
@@ -26,13 +30,13 @@ const Contactus = () => {
               </Row>
           <Row>
             <Col xs={4} sm={4} md={2} lg={2} >    
-           <button className="socialbtn"></button>
+           <button className="socialbtn"><TiSocialFacebook className="icon" /></button>
             </Col>
             <Col xs={4} sm={4} md={2} lg={2} >    
-           <button className="socialbtn"></button>
+           <button className="socialbtn"><AiFillInstagram className="icon" /></button>
             </Col>
             <Col xs={4} sm={4} md={2} lg={2} >    
-           <button className="socialbtn"></button>
+           <button className="socialbtn"><AiOutlineTwitter className="icon" /></button>
             </Col>
           </Row>
           </Col>
@@ -40,7 +44,7 @@ const Contactus = () => {
 
           <Col xs={12} sm={12} md={6} lg={6} >
           <div className="contactus-wrapper-form">
-          <h2>Send us a message</h2>
+          <h2>Send us a message <FaPaperPlane className="planeicon"/></h2>
           <Form className="contactus-wrapper-form-form">
             <Form.Group className="mb-3" controlId="formBasicEmail">
              <Form.Label>Name</Form.Label>
@@ -68,7 +72,7 @@ const Contactus = () => {
               
               <Form.Group  className="mb-3">
              
-              <Button type="submit" className="submitbtn">Send</Button>
+              <Button type="submit" className="submitbtn"><FaPaperPlane className="planeiconbtn"/>Send</Button>
           
               </Form.Group>
             

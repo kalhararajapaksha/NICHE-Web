@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 import HeroImg from '../../images/hero-phone.png';
 import { RiSecurePaymentFill } from "@react-icons/all-files/ri/RiSecurePaymentFill";
-import { TiArrowRepeat } from "@react-icons/all-files/ti/TiArrowRepeat";
+import { BsArrowRepeat } from "@react-icons/all-files/bs/BsArrowRepeat";
 
 
 const Fetures = () => {
@@ -26,7 +26,7 @@ const Fetures = () => {
           <p className="feature-info">Protect Buyer and Security</p>
           </Row>
           <Row className="feature-row">
-          <h3 className="feature-name"><TiArrowRepeat className="icon"/>7 Days Exchanges and Returns</h3>
+          <h3 className="feature-name"><BsArrowRepeat className="icon"/>7 Days Exchanges and Returns</h3>
           <p className="feature-info">Terms and Conditions Apply</p>
           </Row>
       

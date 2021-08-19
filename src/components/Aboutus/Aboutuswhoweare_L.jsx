@@ -5,7 +5,6 @@ import Lot from '../../images/lot1.png';
 import HeroImg from '../../images/hero-phone.png';
 import PlayStore from '../../images/playstore.png';
 import AppStore from '../../images/appstore.svg';
-import { StaticImage } from 'gatsby-plugin-image';
 import CEO from '../../images/ceo.png';
 
 const Hero = () => {

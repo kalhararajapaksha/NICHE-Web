@@ -1,0 +1,86 @@
+#feedback
+{
+    font-family: poppins;
+.feedback-title
+{
+h1 
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: $md-font-size;
+    font-weight: 700;
+    margin-top: 10vh;
+    @include respond(phone)
+    {
+        font-size: $sm-font-size;
+        margin-top: -10vh;
+    }
+}
+h2 
+{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: $sm-font-size;
+    font-weight: 300;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    color: #777575;
+    @include respond(phone)
+    {
+        font-size: $xs-font-size;
+        margin-top: -10vh;
+    }
+}
+    
+}
+.panel
+{
+    width: 25vw;
+    height: 45vh;
+    border: none;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    padding: 3vw;
+    border-radius: 5px;
+    box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+}
+.c-img
+{
+    width: 4vw;
+    height: 4vw;
+    border: none;
+    border-radius: 100%;
+    background-color: gray;
+    position: relative;
+    left: 8vw;
+    top: -10vh;
+}
+.f-name
+{
+    font-size: $xs-font-size;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+    color: black;
+    margin-top: -5vh;
+}
+.stars
+{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3vh;
+    color: $secondary-color;
+}
+.f-desc
+{
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+    color: black;
+    margin-top: 3vh;
+}
+
+}

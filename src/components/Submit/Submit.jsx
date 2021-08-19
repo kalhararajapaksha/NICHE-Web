@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 import {Form} from 'react-bootstrap';
+import { IoIosMailOpen } from "@react-icons/all-files/io/IoIosMailOpen";
 
 const Submit = () => {
     return (
@@ -12,7 +13,7 @@ const Submit = () => {
       <Form className="sub">
        <Form.Group className="mb-3" controlId="formBasicEmail">
          <Row className="email-heading">
-           <h1>Don't fall behind</h1>
+           <h1><IoIosMailOpen className="mailicon"/> Don't fall behind</h1>
          </Row>
          
      <Row className="email-subheading">
