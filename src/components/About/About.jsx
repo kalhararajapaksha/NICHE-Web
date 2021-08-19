@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
-import HeroImg from '../../images/hero-phone.png';
-import { StaticImage } from 'gatsby-plugin-image';
+import Aboutcover from '../../images/about-cover.png';
+import { BsArrowRight } from "@react-icons/all-files/bs/BsArrowRight";
 
 const About = () => {
   return (
@@ -10,7 +10,7 @@ const About = () => {
       <Container>
         <Row className="about-wrapper">
           <Col xs={{ order: '2' }} sm={{ order: '2' }} md={{ order: '1' }} lg={{ order: '1' }}>
-            <StaticImage alt="" src="../../images/about-cover.png" className="hero-phone" />
+            <img alt="" src={Aboutcover} className="hero-phone" />
           </Col>
           <Col
             xs={{ order: '1' }}
@@ -38,7 +38,7 @@ const About = () => {
               </div>
             </Row>
             <Row>
-              <p className="learnmore">Learn more</p>
+              <p className="learnmore">Learn more <BsArrowRight className="arrow"/></p>
             </Row>
           </Col>
         </Row>

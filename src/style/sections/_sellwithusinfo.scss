@@ -1,20 +1,24 @@
-
-#aboutus-whatwedo
+#sellwithusinfo
 {
     font-family: poppins;
 
 .what-heading-row h3
 {
     text-align: center;
-    padding-top: 70px;
+    margin-top: 10vh;
     font-weight: 700;
     text-transform: capitalize;
+
+    @include respond(phone)
+    {
+        margin-top: -25vh;
+    }
 }
 
 .whatwedo-para-row
 {
 
-    padding-top: 70px;
+    margin-top: 10vh;
     text-align: center;
     font-size: $xs-font-size;
     padding-right: 150px;
@@ -24,6 +28,7 @@
       font-size: 15px;
       padding-right: 20px;
       padding-left: 20px;
+      margin-top: -15vh;
     }
       
 
@@ -34,14 +39,6 @@
          
     }
 }
-.bg-img
-{
-    width: 600px;
-    height: 600px;
-    opacity: 20%;
-    position: absolute;
-    top: 2200px;
-    left: -300px;
-}
+
 
 }

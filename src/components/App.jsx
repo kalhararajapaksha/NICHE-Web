@@ -9,6 +9,7 @@ import Map from './MapWorld/Map';
 import About from './About/About';
 import Sellers from './Sellers/Sellers';
 import Submit from './Submit/Submit';
+import Willbeavailableon from './Contactus/available';
 import { PortfolioProvider } from '../context/context';
 import {aboutData} from '../mock/data';
 
@@ -27,7 +28,7 @@ function App() {
       <FeaturesL /> 
       <FeaturesR /> 
       <FeaturesLL /> 
-      <Hero /> 
+      <Willbeavailableon /> 
       <Sellers />
       <Submit />  
     </PortfolioProvider>

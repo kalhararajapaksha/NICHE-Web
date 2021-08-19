@@ -2,7 +2,8 @@ import * as React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 import HeroImg from '../../images/hero-phone.png';
-import { StaticImage } from 'gatsby-plugin-image';
+import { RiShipLine } from "@react-icons/all-files/ri/RiShipLine";
+import { IoRocketOutline } from "@react-icons/all-files/io5/IoRocketOutline";
 
 
 const Fetures = () => {
@@ -16,21 +17,19 @@ const Fetures = () => {
           <h1>order from anywhere</h1>
           </Row>
           <Row className="feature-row">
-          <h3 className="feature-name">International Shipping</h3>
+          <h3 className="feature-name"><IoRocketOutline className="icon" />International Shipping</h3>
           <p className="feature-info">From Selected Brands</p>
           </Row>
           <Row className="feature-row">
-          <h3 className="feature-name">To Your Door Step</h3>
+          <h3 className="feature-name"><RiShipLine className="icon" />To Your Door Step</h3>
           <p className="feature-info">Dispatched Within 3 Days Unless Notified Otherwise</p>
           </Row>
       
           </Col>
           <Col md={6} sm={12}>
-          <StaticImage
+          <img
           alt=""
-          src='../../images/hero-phone.png'
-         // width="50"
-         // height="50"
+          src={HeroImg}
           className="hero-phone"/>
           </Col >
         </Row>
