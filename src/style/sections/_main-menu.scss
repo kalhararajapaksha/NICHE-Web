@@ -12,17 +12,18 @@
         list-style: none;
         font-size: 1rem;
         > a {
-          padding: 10px 12px 10px 12px;
+          padding: 10px 15px 10px 15px;
           display: inline-block;
-          font-weight: normal;
+          font-weight: 500;
           text-decoration: none;
-          color: $primary-color;
+          color: black;
           &:hover {
-            text-decoration: underline;
+            text-decoration: none;
           }
           &.active {
-            font-weight: bold;
+            font-weight: 500;
             text-decoration: none;
+            color: $secondary-color;
             &:hover {
               text-decoration: none;
               transition: all 225ms ease-in 0s;
