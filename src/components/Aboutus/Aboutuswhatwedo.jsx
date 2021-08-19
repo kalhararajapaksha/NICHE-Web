@@ -12,7 +12,7 @@ const Hero = () => {
     return (
       <section id="aboutus-whatwedo" className="multi-bg-example">
       <Container fluid className="whatwedo">
-        
+        <div className="section-div">
         <Row className="what-heading-row">
         
              <Col sm={12} md={12} lg={12}>
@@ -29,8 +29,9 @@ const Hero = () => {
             Come Join Us For An Authentic Sri Lankan Fashion <br/> Experience!
             </p>
        </Row>  
-       <img alt="" src={Lot} width="50" height="50" className="bg-img"/>
-        
+       <img alt="" src={Lot} className="bg-img"/>
+
+       </div>
       </Container>
      
     </section>

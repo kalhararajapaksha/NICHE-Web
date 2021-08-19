@@ -50,10 +50,18 @@
     }
 .social-row
 {
-    margin-left: 22vw;
+    margin-left: 19vw;
     @include respond(phone)
     {
         margin-left: 5vw;
+    }
+}
+.social-col
+{
+    margin-right: 2vw;
+    @include respond(phone)
+    {
+        margin-left: -2vw;
     }
 }
     .socialbtn

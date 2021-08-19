@@ -5,8 +5,7 @@ import Lot from '../../images/lot1.png';
 import HeroImg from '../../images/hero-phone.png';
 import PlayStore from '../../images/playstore.png';
 import AppStore from '../../images/appstore.svg';
-import { StaticImage } from 'gatsby-plugin-image';
-
+import { IoIosArrowDown } from "@react-icons/all-files/io/IoIosArrowDown";
 
 const Hero = () => {
     return (
@@ -28,7 +27,7 @@ const Hero = () => {
 
         <Row className="justify-content-lg-center justify-content-md-center justify-content-xs-center justify-content-sm-center downbtn-row">
         <Col  xs={{ span: 4, offset: 5 }} sm={{ span: 4, offset: 3 }} md={{ span: 4, offset: 3 }} lg={{ span: 4, offset: 3 }}  >
-         <button className="downbtn"></button>
+         <button className="downbtn"><IoIosArrowDown className="arrowdown"/></button>
          </Col>
         </Row>
         <img alt="" src={Lot} width="50" height="50" className="bg-img"/>
