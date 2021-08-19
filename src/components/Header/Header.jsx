@@ -1,35 +1,62 @@
-import * as React from 'react';
-import { Container,Nav,Button,Image} from 'react-bootstrap';
-import { Link } from "gatsby";
-import Navbar from 'react-bootstrap/Navbar';
+import React from 'react';
+import { graphql, Link, StaticQuery } from 'gatsby';
+import Menu from '../Menu/Menu';
+import Hamburger from '../Hamburger/Hamburger';
+import MenuMobile from '../MenuMobile/MenuMobile';
+
 import Logo from '../../images/download.png';
 
-const Header = () => {
+class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      menuActive: false
+    };
+  }
+
+  toggleMenu = menuActive => {
+    this.setState(prevState => ({
+      menuActive: !prevState.menuActive
+    }));
+  };
+
+  render() {
+    const config = this.props.data.configJson;
     return (
-        <section id="nav">
-        <Navbar  expand="lg" id="navd">
-        <Container>
-          <Navbar.Brand href="#home" className="nav-logo">
-            <img
-          alt=""
-          src={Logo}
-          width="50"
-          height="50"
-          className="d-inline-block align-top"/>
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="#home"><Link to="/" smooth duration={100} >Hero</Link></Nav.Link>
-              <Nav.Link href="#link"><Link to="/about" smooth duration={100} >About</Link></Nav.Link>
-              <Nav.Link href="#link"><Link to="/contact" smooth duration={100} >Contact us</Link></Nav.Link>
-              <Nav.Link href="#link"><Button variant="danger" size="sm"><Link to="/sellwithus" smooth duration={100} className="btn-join">Join with us</Link></Button></Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-      </section>
-)
+      <div className="header">
+        <div className="container">
+          <div className="logo">
+            <Link to="/">
+              <img height={config.logo.desktop_height} alt={config.logo.alt} src={Logo} />
+            </Link>
+          </div>
+           
+          <MenuMobile active={this.state.menuActive} />
+          <Menu />
+        
+          <Hamburger toggleMenu={this.toggleMenu} />
+        </div>
+      </div>
+    );
+  }
 }
 
-export default Header
+const props = () => (
+  <StaticQuery
+    query={graphql`
+      query HeaderQuery {
+        configJson {
+          logo {
+            alt
+            desktop
+            mobile
+            desktop_height
+          }
+        }
+      }
+    `}
+    render={data => <Header data={data} />}
+  />
+);
+
+export default props;
