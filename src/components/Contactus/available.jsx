@@ -5,7 +5,6 @@ import Lot from '../../images/lot1.png';
 import HeroImg from '../../images/hero-phone.png';
 import PlayStore from '../../images/playstore.png';
 import AppStore from '../../images/appstore.svg';
-import { StaticImage } from 'gatsby-plugin-image';
 
 
 const Available = () => {
@@ -25,22 +24,20 @@ const Available = () => {
                 </p>
               </div>
               </Row>
-          <Row>
-            <Col sm={6} xs={6} md={6} lg={6} >    
-            <img alt="" src={AppStore} width="200" height="50" className="download-btn"/>
-            </Col>
-            <Col sm={6} xs={6} md={6} lg={6}>    
-           <img alt="" src={PlayStore} width="200" height="50" className="download-btn"/>
+          <Row className="download-btn">
+            <Col sm={12} xs={12} md={12} lg={12} >    
+            <img alt="" src={AppStore} width="200" height="50" className="btn"/>
+            
+           <img alt="" src={PlayStore} width="200" height="50" className="btn pl"/>
             </Col>
           </Row>
           </Col>
 
           <Col sm={12} xs={12} md={6} lg={6}>
           <div className="available-wrapper__image">
-          <StaticImage
+          <img
           alt=""
-          layout="constrained"
-          src="../../images/hero-phone.png"
+          src={HeroImg}
           className="hero-phone"/>
           </div>
           </Col>

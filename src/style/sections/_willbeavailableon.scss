@@ -2,6 +2,8 @@
 {
     font-family: poppins;
 
+    background-color: #FCFCFC;
+
 .app-heading 
 {
 
@@ -38,16 +40,35 @@ h1
 
 .download-btn
 {
+    
+.btn
+{
     margin-top: 5vh;
-    width: 20vw;
-    height: 10vh;
+    width: 200px;
+    height: auto;
     margin-left: -1vw;
+    margin-right: 3vw;
     @include respond (phone)
     {
     width: 35vw;
     height: 10vh;
     margin-top: 5vh;
     margin-left: 2vw;
+    }
+
+    .pl
+    {
+        margin-left: -3vw;
+            
+    }
+}
+}
+.hero-phone
+{
+    width: 45vw;
+    @include respond(phone)
+    {
+        width: 100vw;
     }
 }
 

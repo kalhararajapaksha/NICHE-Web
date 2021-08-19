@@ -44,17 +44,35 @@
     font-size: $sm-font-size;
     font-weight: 300;
     padding-bottom: 3vh;
+    margin-left: -3vw;
     @include respond(phone)
         {
         font-size: 15px;
         padding-top: 1vh;
         }
+
+      .usericon
+      {
+        width: 5vw;
+        height: 5vh;
+       
+      }
+      .brandicon
+      {
+        width: 5vw;
+        height: 5vh;
+      }
+      .flagicon
+      {
+        width: 5vw;
+        height: 5vh;
+      }
   }
 
   .map-img
   {
-    width: 70vw;
-    margin-left: 13vw;
+    width: 50vw;
+    margin-left: 23vw;
     @include respond(phone)
     {
       width: 100vw;

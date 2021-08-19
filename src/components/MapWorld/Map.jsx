@@ -2,7 +2,10 @@ import * as React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 import HeroImg from '../../images/hero-phone.png';
-import { StaticImage } from 'gatsby-plugin-image';
+import Mapimg from '../../images/map.png';
+import { FaUserAlt } from "@react-icons/all-files/fa/FaUserAlt";
+import { SiAnalogue } from "@react-icons/all-files/si/SiAnalogue";
+import { FaFlagUsa } from "@react-icons/all-files/fa/FaFlagUsa";
 
 const Map = () => {
     return (
@@ -16,15 +19,15 @@ const Map = () => {
           <Col  xs={4} sm={4} md={4} lg={4}><h1>200 +</h1></Col>
           </Row>
           <Row className="map-wrapper__text">
-          <Col  xs={4} sm={4} md={4} lg={4}><h1>Users</h1></Col>
-          <Col  xs={4} sm={4} md={4} lg={4}><h1>Brands to choose<br/> from</h1></Col>
-          <Col  xs={4} sm={4} md={4} lg={4}><h1>Countries</h1></Col>
+          <Col  xs={4} sm={4} md={4} lg={4}><h1><FaUserAlt className="usericon"/>Users</h1></Col>
+          <Col  xs={4} sm={4} md={4} lg={4}><h1><SiAnalogue className="brandicon"/>Brands to choose from</h1></Col>
+          <Col  xs={4} sm={4} md={4} lg={4}><h1><FaFlagUsa className="flagicon"/>Countries</h1></Col>
           </Row>
           </Row>
           <Row>
-          <StaticImage
+          <img
           alt=""
-          src='../../images/map.png'
+          src={Mapimg}
           className="map-img"/>
           </Row>
 
