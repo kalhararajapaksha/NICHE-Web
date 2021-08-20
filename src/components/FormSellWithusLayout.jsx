@@ -2,6 +2,8 @@ import React,{useContext} from 'react';
 import FirstStep from './Forms/FirstStep';
 import SecondStep from './Forms/SecondStep';
 import ThirdStep from './Forms/ThirdStep';
+import FourthStep from './Forms/FourthStep';
+import Fifth from './Forms/FiveStep';
 import {Stepper,StepLabel,Step} from '@material-ui/core';
 import {multiStepContext} from '../StepContext';
 
@@ -17,6 +19,10 @@ function Form(){
                 return <SecondStep />
             case 3:
                 return <ThirdStep />
+            case 4:
+                return <FourthStep />
+            case 5:
+                return <Fifth />
         }
     }
 
@@ -28,6 +34,16 @@ function Form(){
                       <Step>
                           <StepLabel>
 
+                          </StepLabel>
+                      </Step>
+                      <Step>
+                          <StepLabel>
+                              
+                          </StepLabel>
+                      </Step>
+                      <Step>
+                          <StepLabel>
+                              
                           </StepLabel>
                       </Step>
                       <Step>
