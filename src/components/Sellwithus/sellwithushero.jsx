@@ -1,16 +1,21 @@
-import * as React from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import Title from '../Title/Title';
 import Lot from '../../images/lot1.png';
 import HeroImg from '../../images/hero-phone.png';
-import PlayStore from '../../images/playstore.png';
-import AppStore from '../../images/appstore.svg';
 import { Link } from '@reach/router'
+import { Modal } from '../Modal/Modal';
+
 
 
 
 const Hero = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const openModal = () => {
+    setShowModal(prev => !prev);
+  };
     return (
+      <>
       <section id="sellhero" className="multi-bg-example">
         <Container>
           <Row className="hero-wrapper">
@@ -32,7 +37,7 @@ const Hero = () => {
               </Row>
               <Row>
                 <Col>
-                  <button className="sellbtn">Sell with us</button>
+                  <button className="sellbtn" onClick={openModal}>Sell with us</button>
                 </Col>
               </Row>
             </Col>
@@ -49,7 +54,11 @@ const Hero = () => {
           </Row>
           <img alt="" src={Lot} width="50" height="50" className="bg-img" />
         </Container>
+        
       </section>
+      <Modal showModal={showModal} setShowModal={setShowModal} />
+      
+      </>
     );
 }
 
