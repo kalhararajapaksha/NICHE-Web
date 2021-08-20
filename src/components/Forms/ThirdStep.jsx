@@ -32,7 +32,7 @@ export default function ThirdStep() {
             
             <div>
             <Button variant="contained" color="secondary" onClick={()=>setStep(2)}>Back</Button>
-            <Button variant="contained" onClick={submitData} color="primary">Submit</Button>
+            <Button variant="contained" onClick={()=>setStep(4)} color="primary">Next</Button>
             </div>
         </div>
     )
