@@ -32,7 +32,7 @@ z-index: 1;
 text-transform: uppercase;
 font-size: $xl-font-size;
 font-weight: 600;
-margin-top: 13vh;
+margin-top: 5vh;
 @include respond(phone)
 {
     font-size: $lg-font-size;
@@ -96,7 +96,7 @@ margin-right: 3vw;
         padding-bottom: 3vw;
         padding-top: 3vw;
         margin-left: 7vw;
-        margin-top: -3vw;
+        margin-top: -14vh;
         box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.1);
         transition: all 0.3s ease 0s;
 
@@ -172,6 +172,8 @@ margin-right: 3vw;
                 height: 5vh;
                 margin-top: 6vh;
                 margin-left: 8.5vw;
+                position: relative;
+                bottom: 1vh;
 
                 @include respond(phone)
                 {

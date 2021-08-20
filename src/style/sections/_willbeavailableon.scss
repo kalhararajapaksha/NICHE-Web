@@ -42,8 +42,8 @@ h1
 .btn
 {
     margin-top: 5vh;
-    width: 200px;
-    height: auto;
+    width: auto;
+    height: 50px;
     margin-left: -1vw;
     margin-right: 3vw;
     @include respond (phone)
