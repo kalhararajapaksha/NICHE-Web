@@ -27,7 +27,7 @@ export default function FirstStep() {
             <TextField label="Contact No" value={userData['contactno']} onChange={(e)=>setUserData({...userData,"contactno":e.target.value})} margin="normal" variant="filled" color="secondary" />
             </div>
             <div>
-            <Checkbox label="check"  checked={userData['checkedA']} onChange={(e)=>setUserData({...userData,"checkedA":e.target.checked})} name="kasun" margin="normal" variant="outlined" color="secondary" />
+            <Checkbox label="chek"  checked={userData['checkedA']} onChange={(e)=>setUserData({...userData,"checkedA":e.target.checked})} name="kasun" margin="normal" variant="outlined" color="secondary" />
             </div>
             
             <div>
