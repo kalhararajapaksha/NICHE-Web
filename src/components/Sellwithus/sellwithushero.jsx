@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Lot from '../../images/lot1.png';
 import HeroImg from '../../images/hero-phone.png';
-import { Link } from '@reach/router'
+import { Link } from '@reach/router';
 import { Modal } from '../Modal/Modal';
 
 

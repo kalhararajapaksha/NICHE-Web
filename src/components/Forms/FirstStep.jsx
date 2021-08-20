@@ -1,6 +1,8 @@
-import React, {useContext} from 'react'
+import React, {useContext} from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 import { Button,TextField,Checkbox } from '@material-ui/core';
 import {multiStepContext} from '../../StepContext';
+import Title from '../Title/Title';
 
 export default function FirstStep() {
     const {setStep,userData,setUserData}=useContext(multiStepContext);
@@ -15,23 +17,24 @@ export default function FirstStep() {
     }*/
     return (
         <div className="formsize">
-            <div>
-            <TextField label="First name" value={userData['firstname']} onChange={(e)=>setUserData({...userData,"firstname":e.target.value})} margin="normal" variant="filled" color="secondary"  />
-            </div>
+            <Row>
+                <Col>
+                   <Title>BUILD YOUR BRAND,  </Title>
+                   <Title>BUILD YOUR ONLINE PRESENCE,</Title>
+                   <Title>BUILD YOUR STORE...</Title>
+                </Col>
+                <Col>
+                <Title>Ayubowan</Title>
+                <h4>Fill in the form & request invitation to sell with NICHE.</h4>
+                <p>Focus on the things you love and let us handle the rest</p>
+                <p>Your online business managed</p>
+                <p>Be the first to join with NICHE and get extra merchant benefits</p>
+                </Col>
+            </Row>
+          
             
             <div>
-            <TextField label="Brand Name" value={userData['brandname']} onChange={(e)=>setUserData({...userData,"brandname":e.target.value})} margin="normal" variant="filled" color="secondary" />
-            </div>
-            
-            <div>
-            <TextField label="Contact No" value={userData['contactno']} onChange={(e)=>setUserData({...userData,"contactno":e.target.value})} margin="normal" variant="filled" color="secondary" />
-            </div>
-            <div>
-            <Checkbox label="chek"  checked={userData['checkedA']} onChange={(e)=>setUserData({...userData,"checkedA":e.target.checked})} name="kasun" margin="normal" variant="outlined" color="secondary" />
-            </div>
-            
-            <div>
-            <Button variant="contained" color="primary" onClick={()=>setStep(2)}>Next</Button>
+            <Button variant="contained" color="primary" onClick={()=>setStep(5)}>Continue</Button>
             </div>
             
         </div>
