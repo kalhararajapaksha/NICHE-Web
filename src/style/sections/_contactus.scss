@@ -6,19 +6,19 @@
 
     .bg-img{
         position: absolute;
-        top:130px;
-        left:-300px;
-        width: 600px;
-        height: 600px;
-        opacity: 20%; 
+        top: 0vh;
+        left: -27.5vw;
+        width: 55vw;
+        height: 55vw;
+        opacity: 18%;
         z-index: 0;
-
+    
         @include respond(phone)
         {
-        top:20vh;
-        left:-50vw;
-        width: 100vw;
-        height: 100vw;
+          top: 1vh;
+          left: -70vw;
+          width: 140vw;
+          height: 140vw;
         }
       }
 
@@ -32,7 +32,7 @@ z-index: 1;
 text-transform: uppercase;
 font-size: $xl-font-size;
 font-weight: 600;
-margin-top: 5vh;
+margin-top: 10vh;
 @include respond(phone)
 {
     font-size: $lg-font-size;
@@ -96,7 +96,7 @@ margin-right: 3vw;
         padding-bottom: 3vw;
         padding-top: 3vw;
         margin-left: 7vw;
-        margin-top: -14vh;
+        margin-top: -5vh;
         box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.1);
         transition: all 0.3s ease 0s;
 

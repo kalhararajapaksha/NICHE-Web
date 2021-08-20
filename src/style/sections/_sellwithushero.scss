@@ -3,22 +3,22 @@
     font-family: poppins;
   
     .bg-img{
-        position: absolute;
-        top:130px;
-        left:-300px;
-        width: 600px;
-        height: 600px;
-        opacity: 20%; 
-        z-index: 0;
-
-        @include respond(phone)
-        {
-        top:20vh;
-        left:-50vw;
-        width: 100vw;
-        height: 100vw;
-        }
+      position: absolute;
+      top: 0vh;
+      left: -27.5vw;
+      width: 55vw;
+      height: 55vw;
+      opacity: 18%;
+      z-index: 0;
+  
+      @include respond(phone)
+      {
+        top: 1vh;
+        left: -70vw;
+        width: 140vw;
+        height: 140vw;
       }
+    }
       padding-top: 100px;
       background-color: $white-color;
       color: $dark-blue-text;

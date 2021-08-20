@@ -3,13 +3,18 @@
   .about-wrapper {
     margin-bottom: 15vh;
   }
+  .about-div
+  {
+    margin-left: 3vw;
+    margin-right: 3vw;
+  }
   .aboutniche {
         h3 {
             text-transform: uppercase;
             font-size: $lg-font-size;
             font-weight: 700;
             margin-left: -10vw;
-            margin-top: 5vh;
+            margin-top: 8vh;
 
             @include respond(phone) {
             font-size: $md-font-size;
@@ -30,7 +35,7 @@
       font-size: 15px;
       font-weight: 500;
       margin-left: 3vw;
-      margin-top: -20vh;
+      margin-top: -22vh;
     }
   }
 
@@ -54,11 +59,11 @@
     }
   }
   .hero-phone {
-    width: 28vw;
+    width: 30vw;
     @include respond(phone) {
       width: 80vw;
       margin-left: 5vw;
-      margin-top: 10vh;
+      margin-top: 3vh;
     }
   }
 }

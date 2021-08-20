@@ -19,6 +19,7 @@ const About = () => {
             lg={{ order: '2' }}
             className="aboutniche"
           >
+            <div className="about-div">
             <Row>
               <h3>About niche</h3>
             </Row>
@@ -40,6 +41,7 @@ const About = () => {
             <Row>
               <p className="learnmore">Learn more <BsArrowRight className="arrow"/></p>
             </Row>
+            </div>
           </Col>
         </Row>
       </Container>

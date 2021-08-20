@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
-import Lot from '../../images/lot1.png';
+import Lot from '../../images/flower.png';
 import PlayStore from '../../images/playstore.png';
 import AppStore from '../../images/appstore.svg';
 import {Form,Button} from 'react-bootstrap';
