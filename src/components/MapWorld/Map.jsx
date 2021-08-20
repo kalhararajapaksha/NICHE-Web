@@ -19,9 +19,40 @@ const Map = () => {
           <Col  xs={4} sm={4} md={4} lg={4}><h1>200 +</h1></Col>
           </Row>
           <Row className="map-wrapper__text">
-          <Col  xs={4} sm={4} md={4} lg={4}><h1><FaUserAlt className="usericon"/>Users</h1></Col>
-          <Col  xs={4} sm={4} md={4} lg={4}><h1><SiAnalogue className="brandicon"/>Brands to choose from</h1></Col>
-          <Col  xs={4} sm={4} md={4} lg={4}><h1><FaFlagUsa className="flagicon"/>Countries</h1></Col>
+
+          <Col  xs={4} sm={4} md={4} lg={4}>
+            <Row> 
+            <Col className="iconcol" xs={6} sm={6} md={6} lg={6}>
+            <FaUserAlt className="usericon"/>
+            </Col> 
+            <Col className="txtcol" xs={6} sm={6} md={6} lg={6}>
+            <h1>Users <br/>Worldwide</h1>
+            </Col>
+            </Row>
+            </Col>
+
+            <Col  xs={4} sm={4} md={4} lg={4}>
+            <Row> 
+            <Col className="iconcol" xs={6} sm={6} md={6} lg={6}>
+            <SiAnalogue className="usericon"/>
+            </Col> 
+            <Col className="txtcol" xs={6} sm={6} md={6} lg={6}>
+            <h1>Brands to<br/>choose from </h1>
+            </Col>
+            </Row>
+            </Col>
+
+            <Col  xs={4} sm={4} md={4} lg={4}>
+            <Row> 
+            <Col className="iconcol" xs={6} sm={6} md={6} lg={6}>
+            <FaFlagUsa className="usericon"/>
+            </Col> 
+            <Col className="txtcol" xs={6} sm={6} md={6} lg={6}>
+            <h1>Countries</h1>
+            </Col>
+            </Row>
+            </Col>
+            
           </Row>
           </Row>
           <Row>

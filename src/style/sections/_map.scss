@@ -31,55 +31,49 @@
 
         @include respond(phone)
         {
-        font-size: $sm-font-size;
+        font-size: $xs-font-size;
         padding-top: 5vh;
+        margin-left: 3vw;
         }
 
   }
     .map-wrapper__text h1
   {
-    text-align: center;
+    text-align: left;
     text-transform: capitalize;
     color: $white-color;
     font-size: $sm-font-size;
     font-weight: 300;
     padding-bottom: 3vh;
     margin-left: -3vw;
+    line-height: 1.5;
     @include respond(phone)
         {
+        margin-left: -5vw;
+        margin-right: 3vw;
         font-size: 15px;
         padding-top: 1vh;
         }
 
-      .usericon
-      {
-        width: 5vw;
-        height: 5vh;
-        @include respond(phone)
-        {
-       margin-right: 3vw;
-        }
-      }
-      .brandicon
-      {
-        width: 5vw;
-        height: 5vh;
-        @include respond(phone)
-        {
-       margin-right: 3vw;
-        }
-      }
-      .flagicon
-      {
-        width: 5vw;
-        height: 5vh;
-        @include respond(phone)
-        {
-          margin-left: 3vw;
-          margin-right: 3vw;
-        }
-      }
+      
+     
   }
+  
+  .usericon
+      {
+        
+        color: white;
+        font-size: $xl-font-size;
+        margin-left: 8vw;
+        margin-top: 1vh;
+        @include respond(phone)
+        {
+        font-size: $sm-font-size;
+        margin-left: 0vw;
+        margin-right: 3vw;
+        padding-top: 1vh;
+        }
+      }
 
   .map-img
   {
