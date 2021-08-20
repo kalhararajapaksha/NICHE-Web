@@ -4,6 +4,7 @@ import SecondStep from './Forms/SecondStep';
 import ThirdStep from './Forms/ThirdStep';
 import FourthStep from './Forms/FourthStep';
 import Fifth from './Forms/FiveStep';
+import Sixth from './Forms/SixthStep';
 import {Stepper,StepLabel,Step} from '@material-ui/core';
 import {multiStepContext} from '../StepContext';
 
@@ -23,6 +24,8 @@ function Form(){
                 return <FourthStep />
             case 5:
                 return <Fifth />
+            case 6:
+                return <Sixth />
         }
     }
 
@@ -34,6 +37,11 @@ function Form(){
                       <Step>
                           <StepLabel>
 
+                          </StepLabel>
+                      </Step>
+                      <Step>
+                          <StepLabel>
+                              
                           </StepLabel>
                       </Step>
                       <Step>
