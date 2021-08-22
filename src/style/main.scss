@@ -7,13 +7,6 @@
 @import './libraries/hamburgers/hamburgers';
 
 
-
-section {
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-bottom: 70px;
-    
-  }
 //header
 @import './sections/hamburger';
 @import './sections/header';
@@ -52,6 +45,24 @@ section {
 @import './sections/sellwithus_features';
 @import './sections/sellwithus_testimonials';
 
+
+body {
+  font-family: $font;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.title-1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 38px;
+  text-transform: uppercase;
+}
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
 
 

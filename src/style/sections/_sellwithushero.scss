@@ -35,52 +35,16 @@
       .hero-wrapper {       
  
 
-        .hero-heading h1
-        {
-          position: relative;
-          z-index: 1;
-          font-size: $lg-font-size;
-          font-weight: 700;
-          padding-top: 3vh;
-          line-height: 50px;
+        .hero-heading {
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+  }
+}
 
-          @include respond(phone)
-         {
-          font-size: $md-font-size;
-          text-align: center;
-         }
-        }
-        .hero-heading h2
-        {
-          position: relative;
-          z-index: 1;
-          font-size: $md-font-size;
-          font-weight:500;
-          padding-top: 15vh;
-          line-height: 50px;
-          color: $secondary-color;
-
-          @include respond(phone)
-         {
-          font-size: $sm-font-size;
-          text-align: center;
-         }
-        }
-        .hero-wrapper__info-text
-        {
-          position: relative;
-          z-index: 1;
-          font-size: $sm-font-size;
-          font-weight: 500;
-          padding-top: 3vh;
-          padding-bottom: 3vh;
-
-          @include respond(phone)
-          {
-            font-size: $xs-font-size;
-           text-align: center;
-          }
-        }
+        
+        
        
         .sellbtn
         {
@@ -106,6 +70,7 @@
 
         }
         }
+
       .col-hero-wrapper__image
       {
         margin-left: -200px;

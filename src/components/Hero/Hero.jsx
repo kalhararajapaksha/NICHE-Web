@@ -15,7 +15,8 @@ const Hero = () => {
       <section id="hero" className="multi-bg-example">
         <Container>
           <Row className="hero-wrapper">
-            <Col xs={12} sm={12} md={6} lg={6}>
+            <img alt="" src={Lot} width="50" height="50" className="bg-img" />
+            <Col xs={12} sm={12} md={6} lg={6} className="d-flex align-items-center">
               <Row className="hero-heading">
                 <h1>
                   Be Exclusive, Be <br /> Divine, Be Yourself{' '}
@@ -27,32 +28,23 @@ const Hero = () => {
                     }
                   </p>
                 </div>
-              </Row>
-              <Row>
-                <Col>
-                  <div className="store-button-group">
-                    <a className="appstorebtn" href="/">
-                      <img alt="" src={AppStore} />
-                    </a>
-                    <a className="appstorebtn pl-3" href="/">
-                      <img alt="" src={PlayStore} />
-                    </a>
-                  </div>
-                </Col>
+                <div className="store-button-group">
+                  <a className="appstorebtn" href="/">
+                    <img alt="" src={AppStore} />
+                  </a>
+                  <a className="appstorebtn pl-3" href="/">
+                    <img alt="" src={PlayStore} />
+                  </a>
+                </div>
               </Row>
             </Col>
 
             <Col xs={12} sm={12} md={6} lg={6} className="col-hero-wrapper__image">
               <div className="hero-wrapper__image">
-                <img
-                  alt=""
-                  src={HeroImg}
-                  className="hero-phone"
-                />
+                <img alt="" src={HeroImg} className="hero-phone" />
               </div>
             </Col>
           </Row>
-          <img alt="" src={Lot} width="50" height="50" className="bg-img" />
         </Container>
       </section>
     );

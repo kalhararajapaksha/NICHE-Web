@@ -1,72 +1,28 @@
-#features_l
+#features
 {
-    font-family: poppins;
-    background-color: #FFF8F8;
-    margin-top: 10vh;
-    
-.hero-phone
-{
-    width: 45vw;
-    @include respond(phone)
-    {
-        width: 100vw;
-    }
-}
-.feature-title h1
-{
-    text-transform: capitalize;
-    text-align: left;
-    font-size: $lg-font-size;
-    font-weight: 700;
-    margin-top: 10vh;
-    @include respond(phone)
-    {
-        font-size: $md-font-size;
-        margin-top: 5vh;
-    }
-}
-.feature-row
-{
-    .feature-name 
-    {
-    text-transform: capitalize;
-    text-align: left;
-    font-size: $sm-font-size;
-    font-weight: 500;
-    margin-top: 3vh;
-    color: $secondary-color;
-    @include respond(phone)
-    {
-        font-size: $xs-font-size;
-        margin-top: 3vh;
-    }
-    .icon
-    {
-        margin-right: 2vw;
 
-        @include respond(phone)
-        {
-         margin-right: 5vw;
+    .feature-image {
+        width: 100%;
+    }
+
+    .feature {
+        padding-left: 30px;
+
+        .feature-group {
+            .feature-name {
+                color: #ff455c;
+                font-size: 28px;
+                font-weight: 600;
+                margin-bottom: 3px;
+    
+                span {
+                    margin-left: 20px;
+                }
+            }
         }
     }
-    }
-    .feature-info
-    {
-    text-transform: capitalize;
-    text-align: left;
-    font-size: $xs-font-size;
-    font-weight: 500;
-    margin-top: 3vh;
-    color: black;
-
-    @include respond(phone)
-    {
-        font-size: 15px;
-        margin-top: 3vh;
-    }
-    }
 }
 
-
-
+#features.color-background {
+    background-color: #FFF8F8;
 }
