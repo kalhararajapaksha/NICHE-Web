@@ -10,43 +10,42 @@ import AppStore from '../../images/appstore.svg';
 const Available = () => {
     return (
       <section id="available" className="multi-bg-example">
-      <Container>
-        
-        <Row className="available-wrapper">
-        
-          <Col sm={12} xs={12} md={6} lg={6} >
-            <Row className="app-heading">
-            <h1>Will be available on</h1>
-            
-              <div className="available-wrapper__info">
-                <p className="available-wrapper__info-text">
-                  {'Niche will soon be available on both Android PlayStore and Apple AppStore for free download. Be ready to click the download button for an ultimate Sri Lankan fashion experience.'}
-                </p>
+        <Container>
+          <Row className="available-wrapper">
+            <Col sm={12} xs={12} md={6} lg={6} className="d-flex align-items-center">
+              <div>
+                <div className="app-heading">
+                  <h1 className="title-1">Will be available on</h1>
+
+                  <div className="available-wrapper__info">
+                    <p className="available-wrapper__info-text">
+                      {
+                        'Niche will soon be available on both Android PlayStore and Apple AppStore for free download. Be ready to click the download button for an ultimate Sri Lankan fashion experience.'
+                      }
+                    </p>
+                  </div>
+                </div>
+
+                <div className="store-button-group">
+                  <a className="appstorebtn" href="/">
+                    <img alt="" src={AppStore} />
+                  </a>
+                  <a className="appstorebtn pl-3" href="/">
+                    <img alt="" src={PlayStore} />
+                  </a>
+                </div>
               </div>
-              </Row>
-          <Row className="download-btn">
-            <Col sm={12} xs={12} md={12} lg={12} >    
-            <img alt="" src={AppStore} width="200" height="50" className="btn"/>
-            
-           <img alt="" src={PlayStore} width="200" height="50" className="btn pl"/>
+            </Col>
+
+            <Col sm={12} xs={12} md={6} lg={6}>
+              <div className="available-wrapper__image">
+                <img alt="" src={HeroImg} className="hero-phone" />
+              </div>
             </Col>
           </Row>
-          </Col>
-
-          <Col sm={12} xs={12} md={6} lg={6}>
-          <div className="available-wrapper__image">
-          <img
-          alt=""
-          src={HeroImg}
-          className="hero-phone"/>
-          </div>
-          </Col>
-        </Row>
-     
-      </Container>
-     
-    </section>
-)
+        </Container>
+      </section>
+    );
 }
 
 export default Available

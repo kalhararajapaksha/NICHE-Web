@@ -27,7 +27,7 @@ class Header extends React.Component {
         <div className="container">
           <div className="logo">
             <Link to="/">
-              <img height={config.logo.desktop_height} alt={config.logo.alt} src={Logo} />
+              <img className="nav-logo" alt={config.logo.alt} src={Logo} />
             </Link>
           </div>
            
@@ -50,7 +50,6 @@ const props = () => (
             alt
             desktop
             mobile
-            desktop_height
           }
         }
       }

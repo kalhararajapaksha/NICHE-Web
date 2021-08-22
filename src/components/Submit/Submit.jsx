@@ -1,45 +1,53 @@
 import * as React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
-import {Form} from 'react-bootstrap';
-import { IoIosMailOpen } from "@react-icons/all-files/io/IoIosMailOpen";
+import { Form, InputGroup, FormControl, Button } from 'react-bootstrap';
+import { IoIosMailOpen } from '@react-icons/all-files/io/IoIosMailOpen';
 
 const Submit = () => {
-    return (
-      <section id="submit">
+  return (
+    <section id="submit">
       <Container>
-        <div className="section-div">
-      <Row className="submit-wrapper__info">
-      <Form className="sub">
-       <Form.Group className="mb-3" controlId="formBasicEmail">
-         <Row className="email-heading">
-           <h1><IoIosMailOpen className="mailicon"/> Don't fall behind</h1>
-         </Row>
-         
-     <Row className="email-subheading">
-      <h2 >Get Exclusive Updates And Deals</h2>
-      </Row>
-      <Row className="input">
-      <Col xs={8} sm={8} md={8} lg={8} >
-      <Form.Control type="email" placeholder="Enter your email"  className="input-email"/>
-      </Col>
-      <Col xs={4} sm={4} md={4} lg={4} >
-      <button className="submitbtn">Sign Me Up</button>
-      </Col>
-      </Row> 
-      <Row className="small-txt">
-      <Form.Text className="text-muted">
-      *Be The First To Sell And Get Additional Benefits And Tools. By Entering Your Email Address, You Accept Marketing Emails From NICHE*
-      </Form.Text>
-      </Row>
-      </Form.Group>
-      </Form>
-      </Row>
-     
-      </div>
+        <Row className="submit-wrapper__info">
+          <Col lg="12">
+            <div className="email-heading">
+              <h1>
+                <IoIosMailOpen className="mailicon" /> Don't fall behind
+              </h1>
+            </div>
+            <div>
+              <h2 className="title-1">Get Exclusive Updates And Deals</h2>
+            </div>
+            <Row className="w-100">
+              <Col xs={8} sm={8} md={8} lg={8} >
+                <Form className="subscribe-form">
+                  <Form.Group controlId="formBasicEmail">
+                    <InputGroup>
+                      <FormControl
+                        placeholder="Enter your email"
+                        aria-label="email"
+                        aria-describedby="email"
+                      />
+                      <Button variant="primary" id="button-addon2">
+                        Let Me Know
+                      </Button>
+                    </InputGroup>
+                    <Form.Text className="text-muted  text-center">
+                      *Be The First To Sell And Get Additional Benefits And Tools. By Entering Your Email
+                      Address, You Accept Marketing Emails From NICHE*
+                    </Form.Text>
+                  </Form.Group>
+                </Form>
+              </Col>
+            </Row>
+
+             
+
+          </Col>
+        </Row>
       </Container>
     </section>
-)
-}
+  );
+};
 
-export default Submit
+export default Submit;

@@ -1,41 +1,10 @@
 #about {
-  font-family: poppins;
+
   .about-wrapper {
-    margin-bottom: 15vh;
-  }
-  .about-div
-  {
-    margin-left: 3vw;
-    margin-right: 3vw;
-  }
-  .aboutniche {
-        h3 {
-            text-transform: uppercase;
-            font-size: $lg-font-size;
-            font-weight: 700;
-            margin-left: -10vw;
-            margin-top: 8vh;
-
-            @include respond(phone) {
-            font-size: $md-font-size;
-            font-weight: 700;
-            margin-left: 3vw;
-            margin-top: -30vh;
-            }
-        }
-    }
-
-  .about-wrapper__info {
-    margin-left: -10vw;
-    padding-top: 3vh;
-    font-size: $xs-font-size;
-    font-weight: 500;
-
-    @include respond(phone) {
-      font-size: 15px;
-      font-weight: 500;
-      margin-left: 3vw;
-      margin-top: -22vh;
+    .about-phone {
+      width: 420px;
+      display: block;
+      margin: auto;
     }
   }
 
@@ -44,26 +13,12 @@
     text-align: left;
     font-size: $xs-font-size;
     color: $secondary-color;
-    margin-left: -10vw;
-    padding-top: 3vh;
     font-weight: 500;
+    cursor: pointer;
+
     @include respond(phone) {
       font-size: 15px;
       font-weight: 500;
-      margin-left: 3vw;
-    }
-    .arrow
-    {
-      width: 3vw;
-      height: 4vh;
-    }
-  }
-  .hero-phone {
-    width: 30vw;
-    @include respond(phone) {
-      width: 80vw;
-      margin-left: 5vw;
-      margin-top: 3vh;
     }
   }
 }
