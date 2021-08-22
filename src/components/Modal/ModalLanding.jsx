@@ -5,7 +5,7 @@ import { Link } from 'gatsby';
 import Stepcontext from '../../StepContext';
 
 
-export const Modal = ({ showModal, setShowModal }) => {
+export const Modal2 = ({ showModal, setShowModal }) => {
   const modalRef = useRef();
 
   const animation = useSpring({

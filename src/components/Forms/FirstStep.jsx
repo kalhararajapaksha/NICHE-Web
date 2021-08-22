@@ -7,14 +7,6 @@ import Title from '../Title/Title';
 export default function FirstStep() {
     const {setStep,userData,setUserData}=useContext(multiStepContext);
      
-   /* State={
-        Colornames:{
-            kasun:false,
-        }
-    }
-    chkclick=(e)=>{
-        var{name,checked}
-    }*/
     return (
         <div className="formsize">
             <Row>

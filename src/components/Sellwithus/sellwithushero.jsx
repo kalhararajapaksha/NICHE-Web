@@ -2,18 +2,18 @@ import React, { useContext, useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Lot from '../../images/flower.png';
 import HeroImg from '../../images/hero-phone.png';
-import { Link } from '@reach/router';
+import { Link } from 'gatsby';
 import { Modal } from '../Modal/Modal';
 
 
 
 
 const Hero = () => {
-  const [showModal, setShowModal] = useState(false);
+  //const [showModal, setShowModal] = useState(false);
 
-  const openModal = () => {
-    setShowModal(prev => !prev);
-  };
+  //const openModal = () => {
+    //setShowModal(prev => !prev);
+  //};
     return (
       <>
       <section id="sellhero" className="multi-bg-example">
@@ -37,7 +37,7 @@ const Hero = () => {
               </Row>
               <Row>
                 <Col>
-                  <button className="sellbtn" onClick={openModal}>Sell with us</button>
+                  <button className="sellbtn" ><Link to="/sellwithusForm">Sell with us</Link></button>
                 </Col>
               </Row>
             </Col>
@@ -56,7 +56,7 @@ const Hero = () => {
         </Container>
         
       </section>
-      <Modal showModal={showModal} setShowModal={setShowModal} />
+      
       
       </>
     );
