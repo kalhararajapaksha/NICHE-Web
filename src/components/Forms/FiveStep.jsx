@@ -45,12 +45,9 @@ export default function FiveStep() {
             <FormControlLabel  control={<Checkbox color="secondary" />} label="Other"  checked={userData['checkedT']} onChange={(e)=>setUserData({...userData,"checkedT":e.target.checked})} value={userData['checkedT']} name="Other" margin="normal" variant="outlined" color="secondary" />
             </div>
             </Row>
-            <Row>
-                <Col></Col>
+            <Row className="mt-5">
                 <Col>
-                <Button variant="contained" color="primary"  type="submit" disabled={state.submitting}>Submit</Button>
-                </Col>
-                <Col>
+                    <Button variant="contained" color="primary"  type="submit" disabled={state.submitting}>Submit</Button>
                 </Col>
             </Row>
             

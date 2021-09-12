@@ -17,7 +17,7 @@ const Hero = () => {
           <Row className="hero-wrapper">
             <img alt="" src={Lot} width="50" height="50" className="bg-img" />
             <Col xs={12} sm={12} md={6} lg={6} className="d-flex align-items-center">
-              <Row className="hero-heading">
+              <div className="hero-heading">
                 <h1>
                   Be Exclusive, Be <br /> Divine, Be Yourself{' '}
                 </h1>
@@ -36,7 +36,7 @@ const Hero = () => {
                     <img alt="" src={PlayStore} />
                   </a>
                 </div>
-              </Row>
+              </div>
             </Col>
 
             <Col xs={12} sm={12} md={6} lg={6} className="col-hero-wrapper__image">

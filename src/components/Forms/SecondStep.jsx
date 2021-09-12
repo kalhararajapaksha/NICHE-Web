@@ -7,19 +7,22 @@ export default function SecondStep() {
     return (
         <section>
             <Container>
+            <div>
+              <h1 className="title-1">Fill the form</h1>
+            </div>
                 <Row>
-                <Form.Group className="mb-3" controlId="formBrandName">
-                <Form.Label>Brand Name</Form.Label>
-                <Form.Control type="text" placeholder="Brand Name" name="Brand Name" />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="formFirstName">
-                <Form.Label>First Name</Form.Label>
-                <Form.Control type="text" placeholder="First Name" name="FirstName"/>
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="formContactName">
-                <Form.Label>Contact Name</Form.Label>
-                <Form.Control type="text" placeholder="Contact Name" name="ContactName" />
-                </Form.Group>
+                    <Form.Group className="mb-3" controlId="formBrandName">
+                        <Form.Label>Brand Name</Form.Label>
+                        <Form.Control type="text" placeholder="Brand Name" name="Brand Name" />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="formFirstName">
+                        <Form.Label>First Name</Form.Label>
+                        <Form.Control type="text" placeholder="First Name" name="FirstName"/>
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="formContactName">
+                        <Form.Label>Contact Name</Form.Label>
+                        <Form.Control type="text" placeholder="Contact Name" name="ContactName" />
+                    </Form.Group>
                 </Row>
                 <Row>
                     <Col>
@@ -49,12 +52,6 @@ export default function SecondStep() {
                     <Form.Control type="email" placeholder="Enter email" />
                     </Form.Group>
                 </Row>
-         
-           
-          
- 
-         
-          
            </Container>              
         </section>
     )

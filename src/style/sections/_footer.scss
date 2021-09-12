@@ -1,95 +1,74 @@
-#footer{
-    font-family: poppins;
+#footer {
+  background-color: #000 !important;
 
-    .footer-details h2
-    {
-        font-size: $sm-font-size;
-        font-weight: 600;
-        margin-left: 5vw;
+  .footer-details {
+    h2 {
+      font-size: $sm-font-size;
+      font-weight: 600;
+      text-align: left;
+
+      @include respond(phone) {
+        font-size: $xs-font-size;
+      }
+    }
+  }
+
+  .footer-details-follow {
+    h2 {
+      font-size: $sm-font-size;
+      font-weight: 600;
+      text-align: right;
+      @include respond(phone) {
+        font-size: $xs-font-size;
         text-align: left;
-
-        @include respond(phone)
-        {
-            font-size: $xs-font-size;
-        }
-    }
-    .footer-details-follow h2
-    {
-        font-size: $sm-font-size;
-        font-weight: 600;
-        margin-left: 5vw;
-        text-align: center;
-        @include respond(phone)
-        {
-            font-size: $xs-font-size;
-            text-align: left;
-            margin-top: 5vh;
-        }
-    }
-    .footer-wrapper__info
-    {
-        font-size: 15px;
-        font-weight: 500;
-        margin-left: 5vw;
         margin-top: 5vh;
-        @include respond(phone)
-        {
-            font-size: 15px;
-        }
+      }
     }
-    .footrdetails{
-        background-color: black;
-        color: white;
-        padding-top: 50px;
-        margin-bottom: -100px;
-     
+  }
+
+  .footer-wrapper__info {
+    font-size: 15px;
+    font-weight: 500;
+    @include respond(phone) {
+      font-size: 15px;
     }
-   
-    .ftrunderpart{
-        text-align: center;
-    }
-.social-row
-{
-    margin-left: 19vw;
-    @include respond(phone)
-    {
-        margin-left: 5vw;
-    }
-}
-.social-col
-{
-    margin-right: 2vw;
-    @include respond(phone)
-    {
-        margin-left: -2vw;
-    }
-}
-    .socialbtn
-{
+  }
+  .footrdetails {
+    background-color: #0000;
+    color: #ffff;
+  }
+
+  .ftrunderpart {
+    text-align: center;
+  }
+  .social-row {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .social-col {
+    width: fit-content;
+  }
+  .socialbtn {
     position: relative;
     z-index: 1;
     margin-top: 5vh;
     width: 60px;
-    height:60px;
+    height: 60px;
     border-radius: 100%;
-    border: 2px solid #FF455C;
+    border: 2px solid #ff455c;
     background-color: black;
     box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease 0s;
 
-    .icon
-    {
-        width: 30px;
-        height:30px;
-        color: $secondary-color;
+    .icon {
+      width: 30px;
+      height: 30px;
+      color: $secondary-color;
     }
-    @include respond(phone)
-{
-    width: 50px;
-    height:50px;
-    margin-bottom: 5vh;
-
-}
-}
-    
+    @include respond(phone) {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 5vh;
+    }
+  }
 }

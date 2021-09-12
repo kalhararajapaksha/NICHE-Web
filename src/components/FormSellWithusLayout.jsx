@@ -13,13 +13,13 @@ function Forms(){
     const {handleSubmit}=useContext(multiStepContext);
     return(
           <div className="form">
+
             <Form onSubmit={handleSubmit}>
-           <SecondStep />
-           <ThirdStep />
-           <FourthStep />
-           <Fifth />
+              <SecondStep />
+              <ThirdStep />
+              <FourthStep />
+              <Fifth />
            </Form>
-           
           </div>
     );
 }

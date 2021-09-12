@@ -23,6 +23,9 @@ const Menu = props => {
             <Link className="menu-link" to={node.url} activeClassName="active">{node.name}</Link>
           </li>
         ))}
+        <li key="Sell With Us">
+            <Link className="menu-link btn btn-primary" to="/sellwithus" activeClassName="active">Sell With Us</Link>
+          </li>
       </ul>
     </div>
   );

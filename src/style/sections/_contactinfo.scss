@@ -1,61 +1,11 @@
 #contactinfo{
-
-    font-family: poppins;
+    background-color: #FFF8F8;
 
     .section-contact
     {
-        background-color: #FFF8F8;
-        width: 100vw;
-        height: 55vh;
-        @include respond(phone)
-        {
-            height: 50vh;
+        .label {
+            text-align: right;
+            font-weight: 500;
         }
-    }
-    .informtions{
-        margin-bottom: 200px;
-        margin-top: 20vh;
-    }
-    .headingdetails h2{
-        text-align: center;
-        font-size: $md-font-size;
-        font-weight: 600;
-        margin-top: 10vh;
-
-        @include respond(phone)
-        {
-            font-size: $xs-font-size;
-            margin-top: 10vh;
-        }
-    }
-    .contactinfo-wrapper__info-text-l
-    {
-        text-align: left;
-        margin-top: 5vh;
-        font-size: $xs-font-size;
-        font-weight: 500;
-        color: $secondary-color;
-        @include respond(phone)
-        {
-            font-size: 15px;
-            margin-top: 5vh;
-            margin-left: 5vw;
-        }
-
-    }
-    .contactinfo-wrapper__info-text-r
-    {
-        text-align: left;
-        margin-top: 5vh;
-        font-size: $xs-font-size;
-        font-weight: 500;
-        color: black;
-        @include respond(phone)
-        {
-            font-size: 15px;
-            margin-top: 5vh;
-            
-        }
-
     }
 }

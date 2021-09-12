@@ -1,105 +1,28 @@
 #feedback
-{
-    font-family: poppins;
-.feedback-title
-{
-h1 
-{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: $md-font-size;
-    font-weight: 700;
-    margin-top: 10vh;
-    @include respond(phone)
     {
-        font-size: $sm-font-size;
-        margin-top: 5vh;
+    .panel {
+        width: 100%;
+        height: auto;
+        padding: 30px 20px;
+        border-radius: 5px;
+        box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+
+        .f-name {
+            font-size: 22px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        .stars
+        {
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: $secondary-color;
+        }
     }
-}
-h2 
-{
-    text-align: center;
-    text-transform: capitalize;
-    font-size: $sm-font-size;
-    font-weight: 300;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    color: #777575;
-    @include respond(phone)
-    {
-        font-size: $xs-font-size;
-        margin-top: 5vh;
-    }
-}
+
     
-}
-.panel
-{
-    width: 25vw;
-    height: 45vh;
-    border: none;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    padding: 3vw;
-    border-radius: 5px;
-    box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease 0s;
-    @include respond(phone)
-    {
-        width: 65vw;
-        height: 50vh;
-        margin-left: 15vw;
-        padding: 5vw;
     }
-}
-.c-img
-{
-    width: 4vw;
-    height: 4vw;
-    border: none;
-    border-radius: 100%;
-    background-color: gray;
-    position: relative;
-    left: 8vw;
-    top: -10vh;
-    @include respond(phone)
-    {
-    width: 12vw;
-    height: 12vw;
-    left: 20vw;
-    top: -7vh;
-
-    }
-}
-.f-name
-{
-    font-size: $xs-font-size;
-    font-weight: 600;
-    text-transform: capitalize;
-    text-align: center;
-    color: black;
-    margin-top: -5vh;
-    @include respond(phone)
-    {
-        margin-top: -1vh;
-    }
-}
-.stars
-{
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 3vh;
-    color: $secondary-color;
-}
-.f-desc
-{
-    font-size: 15px;
-    font-weight: 500;
-    text-transform: capitalize;
-    text-align: center;
-    color: black;
-    margin-top: 3vh;
-}
-
-}
