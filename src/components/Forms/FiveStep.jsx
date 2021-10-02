@@ -5,6 +5,7 @@ import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import { Container, Row, Col } from 'react-bootstrap';
+import Form from 'react-bootstrap/Form';
 
 export default function FiveStep() {
     const {setStep,userData,setUserData,submitData,state}=useContext(multiStepContext);
@@ -27,24 +28,24 @@ export default function FiveStep() {
             </RadioGroup>
             </div>
             </Row>
+          
+            <h6>Portfolio</h6>
             <Row>
-            <h6>How Did You Hear About Us?</h6>
-            <div>
-            <FormControlLabel  control={<Checkbox color="secondary" />} label="Instagram"  checked={userData['checkedP']} onChange={(e)=>setUserData({...userData,"checkedP":e.target.checked})} value={userData['checkedP']} name="Instagram" margin="normal" variant="outlined" color="secondary" />
-            </div>
-            <div>
-            <FormControlLabel  control={<Checkbox color="secondary" />} label="Facebook"  checked={userData['checkedQ']} onChange={(e)=>setUserData({...userData,"checkedQ":e.target.checked})} value={userData['checkedQ']} name="Facebook" margin="normal" variant="outlined" color="secondary" />
-            </div>
-            <div>
-            <FormControlLabel  control={<Checkbox color="secondary" />} label="Word Of Mouth"  checked={userData['checkedR']} onChange={(e)=>setUserData({...userData,"checkedR":e.target.checked})} value={userData['checkedR']} name="WordOfMouth" margin="normal" variant="outlined" color="secondary" />
-            </div>
-            <div>
-            <FormControlLabel  control={<Checkbox color="secondary" />} label="Friend"  checked={userData['checkedS']} onChange={(e)=>setUserData({...userData,"checkedS":e.target.checked})} value={userData['checkedS']} name="Friend" margin="normal" variant="outlined" color="secondary" />
-            </div>
-            <div>
-            <FormControlLabel  control={<Checkbox color="secondary" />} label="Other"  checked={userData['checkedT']} onChange={(e)=>setUserData({...userData,"checkedT":e.target.checked})} value={userData['checkedT']} name="Other" margin="normal" variant="outlined" color="secondary" />
-            </div>
+            <Form.Group className="mb-3" controlId="formSocialMedia">
+            <Form.Label>Social Media: (Instagram/Facebook)</Form.Label>
+            <Form.Control type="text" placeholder="Instagram/Facebook" name="Instagram/Facebook"/>
+            </Form.Group>
             </Row>
+            <Row>
+            <Form.Group className="mb-3" controlId="url">
+            <Form.Label>Attach brand portfolio, brand website or social media URL here</Form.Label>
+            <Form.Control type="text" placeholder="URL" name="URL"/>
+            </Form.Group>
+            </Row>
+            <Form.Group controlId="pdf" className="mb-3">
+            <Form.Label>Attach pdf</Form.Label>
+            <Form.Control type="file" size="sm" />
+            </Form.Group>
             <Row className="mt-5">
                 <Col>
                     <Button variant="contained" color="primary"  type="submit" disabled={state.submitting}>Submit</Button>

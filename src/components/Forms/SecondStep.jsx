@@ -1,8 +1,14 @@
 import React,{useContext} from 'react'
 import Form from 'react-bootstrap/Form';
 import { Container, Row, Col } from 'react-bootstrap';
+import Radio from '@material-ui/core/Radio';
+import RadioGroup from '@material-ui/core/RadioGroup';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import {multiStepContext} from '../../StepContext';
 
 export default function SecondStep() {
+    const {setStep,userData,setUserData}=useContext(multiStepContext);
+    const [value, setValue] = React.useState('Mr');
    
     return (
         <section>
@@ -11,38 +17,42 @@ export default function SecondStep() {
               <h1 className="title-1">Fill the form</h1>
             </div>
                 <Row>
+                <Form.Label>Title</Form.Label>
+
+                <div>
+                <RadioGroup aria-label="Title" name="Title" value={userData['Title']} onChange={(e)=>setUserData({...userData,"Title":e.target.value})} >
+                <FormControlLabel value="Mr" control={<Radio />} label="Mr" />
+                <FormControlLabel value="Mrs" control={<Radio />} label="Mrs" />
+                <FormControlLabel value="Miss" control={<Radio />} label="Miss" />
+                </RadioGroup>
+                </div>
+                </Row>
+
+                <Row>
+                <Col>
+                <Form.Group className="mb-3" controlId="formFirstName">
+                        <Form.Label>First Name</Form.Label>
+                        <Form.Control type="text" placeholder="First Name" name="FirstName"/>
+                    </Form.Group>
+                </Col>
+                <Col>
+                <Form.Group className="mb-3" controlId="formLastName">
+                        <Form.Label>Last Name</Form.Label>
+                        <Form.Control type="text" placeholder="Last Name" name="LastName"/>
+                    </Form.Group>
+                </Col>
+
                     <Form.Group className="mb-3" controlId="formBrandName">
                         <Form.Label>Brand Name</Form.Label>
                         <Form.Control type="text" placeholder="Brand Name" name="Brand Name" />
                     </Form.Group>
-                    <Form.Group className="mb-3" controlId="formFirstName">
-                        <Form.Label>First Name</Form.Label>
-                        <Form.Control type="text" placeholder="First Name" name="FirstName"/>
-                    </Form.Group>
-                    <Form.Group className="mb-3" controlId="formContactName">
-                        <Form.Label>Contact Name</Form.Label>
-                        <Form.Control type="text" placeholder="Contact Name" name="ContactName" />
-                    </Form.Group>
+
                 </Row>
                 <Row>
                     <Col>
                         <Form.Group className="mb-3" controlId="formContactNo">
                         <Form.Label>Contact No.</Form.Label>
                         <Form.Control type="text" placeholder="Contact No" name="ContactNo" />
-                        </Form.Group>
-                        <Form.Group className="mb-3" controlId="formPostalAddress1">
-                        <Form.Label>Postal Address1</Form.Label>
-                        <Form.Control type="text" placeholder="PostalAddress1" name="PostalAddress1"/>
-                        </Form.Group>
-                    </Col>
-                    <Col>
-                        <Form.Group className="mb-3" controlId="formAlternateContactNo">
-                        <Form.Label>Alternate Contact No.</Form.Label>
-                        <Form.Control type="text" placeholder="Alternate Contact No" name="AltrContactNo" />
-                        </Form.Group>
-                        <Form.Group className="mb-3" controlId="formPostalAddress2">
-                        <Form.Label>Postal Address2</Form.Label>
-                        <Form.Control type="text" placeholder="Postal Address2" name="PostalAddress2" />
                         </Form.Group>
                     </Col>
                 </Row>
