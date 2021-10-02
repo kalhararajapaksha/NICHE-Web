@@ -27,7 +27,7 @@ function Sellwithus() {
       <Available />
       <Joinwithus /> 
       <Sellwithus_Features />
-      <Sellwithus_testimonials/>
+      {/* <Sellwithus_testimonials/> */}
 
     </PortfolioProvider>
   );

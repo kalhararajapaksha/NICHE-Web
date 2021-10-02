@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
-import HeroImg from '../../images/hero-phone.png';
+import FashionNeeds from '../../images/FASHION NEEDS.png';
 import { RiShoppingBag3Line } from '@react-icons/all-files/ri/RiShoppingBag3Line';
 import { IoPersonOutline } from '@react-icons/all-files/io5/IoPersonOutline';
 
@@ -18,7 +18,7 @@ const Fetures = () => {
             md={{ order: '1' }}
             lg={{ order: '1' }}
           >
-            <img alt="" src={HeroImg} className="feature-image" />
+            <img alt="" src={FashionNeeds} className="feature-image" />
           </Col>
           <Col
             md={6}
@@ -32,8 +32,7 @@ const Fetures = () => {
             <div className="feature">
               <div className="feature-title">
                 <h1 className="title-1">
-                EVERYTHING YOU NEED <br />
-                AT YOUR FINGERTIPS
+                    All your fashion needs <br/>at your fingertips
                 </h1>
               </div>
               <div className="feature-group">
@@ -41,14 +40,14 @@ const Fetures = () => {
                 <RiShoppingBag3Line className="icon" />
                   <span> Shop and Explore</span>
                 </h3>
-                <p className="feature-info">Shop Women's , Men's , Kids And Cosmetics</p>
+                <p className="feature-info">Women, Men, Kids, Cosmetics and Accessories</p>
               </div>
               <div className="feature-group">
               <h3 className="feature-name">
               <IoPersonOutline className="icon" /> 
-                <span>Buy Direct</span>
+                <span>Direct Buy</span>
               </h3>
-              <p className="feature-info">Buy Direct From The People Who Made It</p>
+              <p className="feature-info">Purchase directly from the manufacturers</p>
             </div>
             </div>
           </Col>

@@ -12,14 +12,18 @@ const Hero = () => {
     return (
       <section id="sellwithusinfo" className="multi-bg-example">
           <Container fluid className="whatwedo">
-               <h3 className="text-center title-1" >SELL WITH US</h3> 
+               <h3 className="text-center title-1" >SELL WITH NICHE</h3> 
                <Row className="d-flex justify-content-center text-center">
                     <Col lg="8">
                          <p className="whatwedo-para">
-                         Niche is a Sri Lankan owned e-commerce platform whose goal is to create a competitive market for Sri Lanka's own incredible designers. Niche will be Sri Lanka’s largest online fashion store. NIche will comprise all leading home-grown fashion brands which will go above and beyond to satisfy our customers. Niche is available in both the Android PlayStore and Apple AppStore for free download. Brands will have access to in-app features such as online stock control, online revenue report generating, promo code generator and many more wonderful features. Niche will help brands to create their own identity,enhance online traffic and sales. Brands will also get access to our user-friendly back end login. We are teaming with the best, to offer our clients and app users the most soothing online shopping experience. A nation leading online payment gateway, PayHere will secure all our online transactions. Niche will monitor brands and customer reviews constantly to maintain the high standards of the platform. This will also help us to improve our services in future. Our technical team, IConn I/O will be powering Niche and will provide constant technical support and upgrades. 
+                         Niche is designed to build the relationship between truly talented Sri Lankan fashion artists aspiring to build their own brand and fashion aficionados who pursue an authentic Sri Lankan taste for clothing and accessories. Our ultimate purpose is to build a sustainable fashion ecosystem by connecting authentic Sri Lankan brands with the outside world. 
+Niche comprise all leading Sri Lankan fashion brands that walk extra miles to satisfy customers. Through an app based fashion market place, brands will have access to in-app features such as product listing and maintenance, stock control, order tracker, revenue dashboards, exclusive promotional campaigns and many other seller tools.
+The dedicated team at Niche ensures your brand is offered a unique marketplace with 360° seller support to reach out to a potential worldwide customer base. The marketplace will be available on Niche app, the first fashion app in Sri Lanka where brands meet their end customer directly. You can create, manage and contact your customers direct through your store at your fingertips. Embedded with an online payment gateway, PayHere and Niche technical team, IConn I/O ensure the customers confidentiality and privacy of data in online transactions are secured. We constantly monitor the brands and customer feedback to ensure Niche maintain the required standards. 
+
+Niche aims to build a community of fashion lovers that could expressively transform the current traditional fashion lackluster of sustainability and ethicality by promoting the minute details of fashion richness. Unleash your fashion potential creating a stepping stone for your excellence with Niche. 
                          </p>
                          <p className="whatwedo-para-bold">
-                         <strong>We invite you and your brand to join our team!</strong>
+                         <strong>Join Niche now. </strong>
                          </p>
                     </Col>
                </Row>  

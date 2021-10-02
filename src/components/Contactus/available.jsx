@@ -15,12 +15,12 @@ const Available = () => {
             <Col sm={12} xs={12} md={6} lg={6} className="d-flex align-items-center">
               <div>
                 <div className="app-heading">
-                  <h1 className="title-1">Will be available on</h1>
+                  <h1 className="title-1">Soon available on</h1>
 
                   <div className="available-wrapper__info">
                     <p className="available-wrapper__info-text">
                       {
-                        'Niche will soon be available on both Android PlayStore and Apple AppStore for free download. Be ready to click the download button for an ultimate Sri Lankan fashion experience.'
+                        'Niche app will be soon available on both Android Playstore and Apple Appstore for free download. Be the first to download and win rewards for an ultimate Sri Lankan fashion experience!'
                       }
                     </p>
                   </div>

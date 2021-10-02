@@ -26,15 +26,10 @@ const About = () => {
               <div>
                 <div className="about-wrapper__info">
                   <p className="about-wrapper__info-text">
-                    NICHE delivers a stylish and trending collection of men and women
-                    apparel,sourced from Sri Lanka own fashion labels and reputed Sri Lankan fashion
-                    icons.NICHE provides you with everything from sarees to dresses, sarongs to
-                    jeans, Cosmetics and accessories.
+                  Niche is an app based fashion market place that connects unique and inspiring clothing and accessories of talented Sri Lankan designers with the fashion aspirants who love to wear exclusive and sustainable materials. Niche market place is a home for 1000+ independent brands that offer an array of products ranging from sarees, dresses, sarongs, jeans, palazzo pants, cosmetics and accessories.
                   </p>
                   <p className="about-wrapper__info-text">
-                    Our incredible collection of products has something for everyone. With the
-                    availability of an ultra-modern collection of clothing and accessories online,
-                    NICHE is your one-stop shop for your wardrobe essentials
+                  Our exclusive collection is the one-stop shop for all men, women and kids fashion desires. Niche provides a holistic management and support to designers to develop their brands, whilst delivering a seamless online fashion experience for its customers. 
                   </p>
                 </div>
               </div>

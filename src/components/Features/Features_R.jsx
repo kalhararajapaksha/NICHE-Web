@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
-import HeroImg from '../../images/hero-phone.png';
+import OrderAnywhere from '../../images/ORDER FROM ANYWHERE.png';
 import { RiShipLine } from '@react-icons/all-files/ri/RiShipLine';
 import { IoRocketOutline } from '@react-icons/all-files/io5/IoRocketOutline';
 
@@ -19,7 +19,8 @@ const Fetures = () => {
             <div className="feature">
               <div className="feature-title">
                 <h1 className="title-1">
-                  order from anywhere
+                 Order from anywhere <br/>
+                 in the world
                 </h1>
               </div>
               <div className="feature-group">
@@ -42,7 +43,7 @@ const Fetures = () => {
             md={6}
             sm={12}
           >
-            <img alt="" src={HeroImg} className="feature-image" />
+            <img alt="" src={OrderAnywhere} className="feature-image" />
           </Col>
           
         </Row>

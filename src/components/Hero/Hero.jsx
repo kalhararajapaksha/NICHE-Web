@@ -19,12 +19,12 @@ const Hero = () => {
             <Col xs={12} sm={12} md={6} lg={6} className="d-flex align-items-center">
               <div className="hero-heading">
                 <h1>
-                  Be Exclusive, Be <br /> Divine, Be Yourself{' '}
+                Be Exclusive, Be <br /> Divine, Be Yourself{' '}
                 </h1>
                 <div className="hero-wrapper__info">
                   <p className="hero-wrapper__info-text">
                     {
-                      'Niche brings you the ultimate Sri Lankan Fashion experience at your fingertips. It is time for you to shine and show the true Sri Lankan in you !'
+                      'Unleash the true Sri Lankan fashion experience with a touch of elegance at your fingertips. Shine away with Niche!'
                     }
                   </p>
                 </div>

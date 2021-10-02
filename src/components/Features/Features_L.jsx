@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
-import HeroImg from '../../images/hero-phone.png';
+import Secure from '../../images/SECURE PAYMENT.png';
 import { RiSecurePaymentFill } from '@react-icons/all-files/ri/RiSecurePaymentFill';
 import { BsArrowRepeat } from '@react-icons/all-files/bs/BsArrowRepeat';
 
@@ -18,7 +18,7 @@ const Fetures = () => {
             md={{ order: '1' }}
             lg={{ order: '1' }}
           >
-            <img alt="" src={HeroImg} className="feature-image" />
+            <img alt="" src={Secure} className="feature-image" />
           </Col>
           <Col
             md={6}
@@ -32,14 +32,13 @@ const Fetures = () => {
             <div className="feature">
               <div className="feature-title">
                 <h1 className="title-1">
-                  YOUR MONEY IS SECURED <br />
-                  WITH US
+                Easy and Secure Payment
                 </h1>
               </div>
               <div className="feature-group">
                 <h3 className="feature-name">
                   <RiSecurePaymentFill className="icon" /> 
-                  <span>100% Secure Checkout</span>
+                  <span>Protect Buyers and Sellers online</span>
                 </h3>
                 <p className="feature-info">Protect Buyer and Security</p>
               </div>

@@ -15,14 +15,14 @@ const Joinwithus = () => {
               </Col>
               <Col lg={6} className="d-flex align-items-center pl-5">
                 <div>
-                    <h2 className="title-1">Sell with us</h2>
+                    <h2 className="title-1">Sell with Niche</h2>
                     
                     <div className="joinwithus-wrapper__info">
                       <p>
-                        {'Niche will help brands to create their own identity, enhance online traffic and sales. We are teaming with the best, to offer our clients and app users the most soothing online shopping experience. We invite you and your brand to join our team!'}
+                        {'Niche helps brands to create their own identity, boost sales and manage their unique online fashion store. Teamed with best, Niche offers its app users the seamless online shopping experience. A world of fashion aficionados await to see your brand'}
                       </p>
                       <p>
-                        <strong> {'We invite you and your brand to join Our team!'}</strong>
+                        <strong> {'Join with Niche now!'}</strong>
                       </p>
                       <Link to="/sellwithusForm" className="btn btn-primary">Sell With Us</Link>
                   </div>

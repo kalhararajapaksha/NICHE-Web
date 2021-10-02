@@ -21,7 +21,7 @@ const Hero = () => {
               
         <Row className="aboutus-subheading-row">
         <Col md={12} sm={12} lg={12}>
-            <h3 className="aboutus-subheading">We're NICHE , Where There's Something For <br />Everyone </h3>
+            <h3 className="aboutus-subheading">We Are Niche, the only authentic Sri Lankan Fashion <br />Marketplace</h3>
         </Col> 
         </Row>
 

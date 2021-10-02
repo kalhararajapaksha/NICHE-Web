@@ -20,7 +20,7 @@ const Contactus = () => {
                   <h1>Get in touch</h1>
                   <div>
                     <p>
-                      {'Feel Like Contacting Us? Submit Your Questions Here & We will Get To You As Soon As Possible '}
+                      {'Submit your queries and suggestions and we will get back to you as soon as possible. We value your feedback!'}
                     </p>
                   </div>
                 </div>

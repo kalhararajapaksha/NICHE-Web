@@ -12,11 +12,11 @@ const Submit = () => {
           <Col lg="12">
             <div className="email-heading">
               <h1>
-                <IoIosMailOpen className="mailicon" /> Don't fall behind
+                <IoIosMailOpen className="mailicon" /> Be The First To Know
               </h1>
             </div>
             <div>
-              <h2 className="title-1">Get Exclusive Updates And Deals</h2>
+              <h2 className="title-1">GET EXCLUSIVE UPDATES & DEALS</h2>
             </div>
             <Row className="w-100">
               <Col xs={8} sm={8} md={8} lg={8} >
@@ -33,8 +33,7 @@ const Submit = () => {
                       </Button>
                     </InputGroup>
                     <Form.Text className="text-muted  text-center">
-                      *Be The First To Sell And Get Additional Benefits And Tools. By Entering Your Email
-                      Address, You Accept Marketing Emails From NICHE*
+                      *By entering your email address you accept promotional emails from Niche*
                     </Form.Text>
                   </Form.Group>
                 </Form>
