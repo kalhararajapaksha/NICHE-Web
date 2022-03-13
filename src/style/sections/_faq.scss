@@ -1,0 +1,17 @@
+#faq {
+  background-color: #868686;
+
+  .title-1 {
+    color: #ffff;
+  }
+
+  .accordion-button {
+    font-size: 18px;
+    font-weight: 600;
+
+    &:not(.collapsed) {
+      color: $primary;
+      background-color:  lighten($primary, 30%);
+    }
+  }
+}

@@ -67,32 +67,26 @@
      font-size: $xs-font-size;  
     }
 }
-.downbtn-row
-{
-    padding-top:15vh;
-}
-.downbtn
-{
-    position: relative;
-    bottom: 10px;
-    width: 70px;
-    height:70px;
-    border-radius: 100%;
-    border: none;
-    background-color: #FF455C;
-    box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease 0s;
 
-    .arrowdown
-    {
-        width: 4vw;
-        height: 4vh;
-        color: white;
-        @include respond (phone)
+    .downbtn-wrap {
+        .downbtn
         {
-            width: 7vw;
-            height: 7vh;
+            position: relative;
+            bottom: 10px;
+            width: 70px;
+            height:70px;
+            border-radius: 100%;
+            border: none;
+            background-color: #FF455C;
+            box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease 0s;
+        
+            .arrowdown
+            {
+                color: white;
+                font-size: 25px;
+            }
         }
     }
-}
+
 }

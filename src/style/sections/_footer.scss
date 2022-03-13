@@ -1,15 +1,36 @@
 #footer {
   background-color: #000 !important;
 
+  .legal-docs {
+      list-style: none;
+      padding-left: 0;
+
+      li {
+        margin-bottom: 12px;
+        
+        a {
+          color: #ffff !important;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+  }
+
   .footer-details {
     h2 {
       font-size: $sm-font-size;
       font-weight: 600;
-      text-align: left;
+      text-align: right;
 
       @include respond(phone) {
         font-size: $xs-font-size;
       }
+    }
+
+    .footer-wrapper__info {
+      text-align: right;
     }
   }
 
@@ -51,7 +72,8 @@
   .socialbtn {
     position: relative;
     z-index: 1;
-    margin-top: 5vh;
+    margin-top: 20px;
+    margin-left: 10px;
     width: 60px;
     height: 60px;
     border-radius: 100%;

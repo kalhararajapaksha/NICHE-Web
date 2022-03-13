@@ -47,7 +47,7 @@ export const Modal = ({ showModal, setShowModal }) => {
           <animated.div style={animation}>
             <div className="modalWrapper" showModal={showModal}>   
               <div className="modal-Content">
-             <h1>Thank You For Join With Us...</h1>
+                 <h1>Thank You For Join With Us...</h1>
               </div>
               <Link to="/sellwithus">
               <MdClose

@@ -9,6 +9,7 @@ import Map from './MapWorld/Map';
 import About from './About/About';
 import Sellers from './Sellers/Sellers';
 import Submit from './Submit/Submit';
+import FAQ from './FAQ/FAQ';
 import Willbeavailableon from './Contactus/available';
 import { PortfolioProvider } from '../context/context';
 import {aboutData} from '../mock/data';
@@ -31,6 +32,7 @@ function App() {
       <Willbeavailableon /> 
       <Sellers />
       <Submit />  
+      <FAQ />  
     </PortfolioProvider>
   );
 }

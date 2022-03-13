@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { graphql, useStaticQuery, Link } from 'gatsby';
 import Title from '../Title/Title';
 import { TiSocialFacebook } from "@react-icons/all-files/ti/TiSocialFacebook";
 import { AiFillInstagram } from "@react-icons/all-files/ai/AiFillInstagram";
@@ -13,21 +14,13 @@ const Footer = () => {
         
         <Row className="footer-wrapper footrdetails pt-5">
           <Col xs={12} sm={12} md={6} lg={6} >
-            <div className="footer-details">
-              <h2>Reach us on</h2>
-              <div className="footer-wrapper__info">
-                <p className="footer-wrapper__info-text">
-                  {'Niche Support:support@niche.lk'}
-                </p>
-                <p className="footer-wrapper__info-text">
-                  {'Niche Vendor Support:bussiness@niche.lk'}
-                </p>
-                <p className="footer-wrapper__info-text">
-                  {'Contact Number:+9476 728 2246'}
-                </p>
-              </div>
-            </div>
-         
+              <ul className='legal-docs'>
+                <li><Link target="_blank" to="/privacypolicy">Privacy Policy</Link></li>  
+                <li><Link target="_blank" to="/">Terms & Conditions</Link></li>
+                <li><Link target="_blank" to="/disclaimer">Disclaimer</Link></li>
+                <li><Link target="_blank" to="/aup">Acceptable Use Policy</Link></li>
+                <li><Link target="_blank" to="/returnpolicy">Return Policy</Link></li>
+              </ul>
           </Col>
 
           <Col xs={12} sm={12} md={6} lg={6} >
@@ -43,6 +36,20 @@ const Footer = () => {
               </div>
               <div className="social-col" >    
                 <button className="socialbtn"><AiOutlineTwitter className="icon" /></button>
+              </div>
+            </div>
+            <div className="footer-details mt-5">
+              <h2>Reach us on</h2>
+              <div className="footer-wrapper__info">
+                <p className="footer-wrapper__info-text">
+                  {'Niche Support: support@niche.lk'}
+                </p>
+                <p className="footer-wrapper__info-text">
+                  {'Niche Vendor Support: bussiness@niche.lk'}
+                </p>
+                <p className="footer-wrapper__info-text">
+                  {'Contact Number: +9476 728 2246'}
+                </p>
               </div>
             </div>
           </Col>
